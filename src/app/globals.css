@@ -1,26 +1,267 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #0f172a;
+    --navy-900: #0f172a;
+    --navy-800: #1e293b;
+    --teal-600: #0d9488;
+    --teal-700: #0f766e;
+    --burgundy-700: #9f1239;
+    --burgundy-800: #881337;
+  }
+
+  * {
+    border-color: #e2e8f0;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    font-feature-settings: "rlig" 1, "calt" 1;
+    overflow-x: hidden;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* Glassmorphism Navigation */
+.glass-header {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-bottom: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+/* Custom Healthcare Glows & Shadows */
+.card-hover {
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 30px -10px rgba(15, 23, 42, 0.08), 0 8px 10px -4px rgba(15, 23, 42, 0.04);
+}
+
+/* Badge pulse for live clinic notice */
+@keyframes pulse-subtle {
+  0%, 100% { opacity: 1; transform: scale(1); }
+  50% { opacity: 0.65; transform: scale(0.98); }
+}
+
+.animate-pulse-subtle {
+  animation: pulse-subtle 2.5s infinite ease-in-out;
+}
+
+/* Radar Pulse Beacon for Live Clinic Status */
+@keyframes radar-pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 8px rgba(16, 185, 129, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(16, 185, 129, 0);
+  }
+}
+
+.animate-radar {
+  animation: radar-pulse 2s infinite cubic-bezier(0.4, 0, 0.6, 1);
+}
+
+/* Ambient Floating Micro-Animations */
+@keyframes float-slow {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-8px) rotate(1deg);
+  }
+}
+
+.animate-float-slow {
+  animation: float-slow 5s ease-in-out infinite;
+}
+
+@keyframes float-reverse {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(7px) rotate(-1deg);
+  }
+}
+
+.animate-float-reverse {
+  animation: float-reverse 6s ease-in-out infinite;
+}
+
+/* Smooth Fade In Up Entrance */
+@keyframes fade-in-up {
+  0% {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fade-in-up {
+  animation: fade-in-up 0.65s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Button & Badge Shimmer Light Sweep */
+@keyframes shimmer-sweep {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.animate-shimmer {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-shimmer::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.22) 50%,
+    transparent 100%
+  );
+  transform: translateX(-100%);
+  animation: shimmer-sweep 3.5s infinite;
+}
+
+/* Modern Clean Glassmorphism Cards */
+.glass-clean {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.9);
+}
+
+.glass-clean-hover {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-clean-hover:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: rgba(13, 148, 136, 0.3);
+  box-shadow: 0 20px 40px -15px rgba(13, 148, 136, 0.12), 0 10px 20px -10px rgba(15, 23, 42, 0.05);
+  transform: translateY(-4px);
+}
+
+/* Subtle Grid Dot Matrix Background */
+.bg-grid-medical {
+  background-image: radial-gradient(rgba(15, 23, 42, 0.08) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+/* Custom Healthcare Glows */
+.glow-teal-sm {
+  box-shadow: 0 0 25px -5px rgba(13, 148, 136, 0.25);
+}
+
+.glow-rose-sm {
+  box-shadow: 0 0 25px -5px rgba(225, 29, 72, 0.25);
+}
+
+/* Animated Gradient Flow for Big Headlines */
+@keyframes gradient-flow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient-flow {
+  background-size: 200% 200%;
+  animation: gradient-flow 6s ease-in-out infinite;
+}
+
+/* Gentle Text Glow Pulse */
+@keyframes text-glow-pulse {
+  0%, 100% {
+    filter: drop-shadow(0 0 2px rgba(13, 148, 136, 0.2));
+  }
+  50% {
+    filter: drop-shadow(0 0 16px rgba(13, 148, 136, 0.45));
+  }
+}
+
+.animate-text-glow {
+  animation: text-glow-pulse 4s ease-in-out infinite;
+}
+
+/* Odia Typography */
+.font-odia {
+  font-family: 'Noto Sans Oriya', 'Kalinga', 'Lohit Oriya', 'Segoe UI', system-ui, sans-serif;
+}
+
+/* Odia Pop-up Entrance Animation */
+@keyframes odia-pop-bounce {
+  0% {
+    opacity: 0;
+    transform: scale(0.88) translateY(24px);
+  }
+  60% {
+    opacity: 1;
+    transform: scale(1.02) translateY(-4px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+  }
+}
+
+.animate-odia-pop {
+  animation: odia-pop-bounce 0.45s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Floating Gentle Levitation */
+@keyframes odia-float {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-6px);
+  }
+}
+
+.animate-odia-float {
+  animation: odia-float 3.5s ease-in-out infinite;
+}
+
+/* Glowing Border Pulse */
+@keyframes odia-glow {
+  0%, 100% {
+    box-shadow: 0 0 20px rgba(13, 148, 136, 0.35), 0 0 35px rgba(159, 18, 57, 0.25);
+  }
+  50% {
+    box-shadow: 0 0 30px rgba(13, 148, 136, 0.6), 0 0 50px rgba(159, 18, 57, 0.45);
+  }
+}
+
+.animate-odia-glow {
+  animation: odia-glow 3s infinite;
 }
