@@ -1,4 +1,4 @@
-import type { Metadata } from 'next';
+import type { Metadata, Viewport } from 'next';
 import { Inter } from 'next/font/google';
 import './globals.css';
 import { CLINIC_CONFIG } from '@/lib/clinic-config';
@@ -8,6 +8,13 @@ const inter = Inter({
   display: 'swap',
   variable: '--font-inter',
 });
+
+export const viewport: Viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  maximumScale: 5,
+  themeColor: '#0f172a',
+};
 
 export const metadata: Metadata = {
   title: {
@@ -26,11 +33,14 @@ export const metadata: Metadata = {
     'Odisha Healthcare',
   ],
   authors: [{ name: 'JOVIX Technologies', url: 'https://www.jovix.co.uk' }],
-  metadataBase: new URL('https://satyabhamahealthcare.com'),
+  metadataBase: new URL('https://satyabhamahealthcare.in'),
+  alternates: {
+    canonical: 'https://satyabhamahealthcare.in',
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
-    url: 'https://satyabhamahealthcare.com',
+    url: 'https://satyabhamahealthcare.in',
     siteName: 'Satyabhama Health Care',
     title: 'Satyabhama Health Care | Bhadrak Multispecialty Clinic',
     description:
@@ -38,10 +48,19 @@ export const metadata: Metadata = {
     images: [
       {
         url: '/images/logo.png',
-        width: 600,
-        height: 600,
+        width: 1024,
+        height: 1024,
         alt: 'Satyabhama Health Care Logo',
       },
+    ],
+  },
+  icons: {
+    icon: [
+      { url: '/favicon.ico', sizes: 'any' },
+      { url: '/icon.png', type: 'image/png', sizes: '192x192' },
+    ],
+    apple: [
+      { url: '/apple-icon.png', sizes: '180x180', type: 'image/png' },
     ],
   },
 };

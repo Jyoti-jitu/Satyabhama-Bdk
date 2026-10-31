@@ -7,34 +7,51 @@ import { CLINIC_CONFIG } from '@/lib/clinic-config';
 
 export function TopInfoBar() {
   return (
-    <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-slate-200 text-xs py-2 px-4 border-b border-slate-800/80 shadow-xs">
-      <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-2">
+    <div className="bg-gradient-to-r from-slate-950 via-slate-900 to-slate-950 text-slate-200 text-[11px] sm:text-xs py-1.5 sm:py-2 px-3 sm:px-4 border-b border-slate-800/80 shadow-xs">
+      <div className="max-w-[1680px] mx-auto px-1 sm:px-4 lg:px-8 xl:px-10 flex flex-col md:flex-row items-center justify-between gap-1.5 sm:gap-2">
         {/* Left: Contact & Location */}
-        <div className="flex flex-wrap items-center justify-center md:justify-start gap-4 sm:gap-6">
+        <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 sm:gap-6">
           <a
             href={`tel:${CLINIC_CONFIG.phone.replace(/\s+/g, '')}`}
-            className="flex items-center gap-1.5 hover:text-teal-300 transition-colors font-medium"
+            className="flex items-center gap-1.5 hover:text-teal-300 transition-colors font-medium py-0.5"
             title="Click to call clinic for enquiry"
           >
             <Phone className="w-3.5 h-3.5 text-teal-400" />
             <span>{CLINIC_CONFIG.phone}</span>
           </a>
 
+          {CLINIC_CONFIG.secondary_phone && (
+            <a
+              href={`tel:${CLINIC_CONFIG.secondary_phone.replace(/\s+/g, '')}`}
+              className="hidden lg:flex items-center gap-1.5 hover:text-teal-300 transition-colors font-medium py-0.5 text-slate-300"
+              title="Click to call clinic secondary helpline"
+            >
+              <Phone className="w-3.5 h-3.5 text-teal-400" />
+              <span>{CLINIC_CONFIG.secondary_phone}</span>
+            </a>
+          )}
+
           <div className="hidden sm:flex items-center gap-1.5 text-slate-300">
             <Clock className="w-3.5 h-3.5 text-teal-400" />
             <span>{CLINIC_CONFIG.opening_hours}</span>
           </div>
 
-          <div className="flex items-center gap-1.5 text-slate-300">
-            <MapPin className="w-3.5 h-3.5 text-rose-400" />
-            <span className="truncate max-w-[260px] sm:max-w-none">
-              Nehru Stadium, Bonth Chhak, Bhadrak
+          <a
+            href={CLINIC_CONFIG.map_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-1.5 text-slate-300 hover:text-teal-400 transition-colors"
+            title="Open Google Maps Location"
+          >
+            <MapPin className="w-3.5 h-3.5 text-rose-400 flex-shrink-0" />
+            <span className="truncate max-w-[190px] xs:max-w-[260px] sm:max-w-none">
+              Nehru Stadium, Stadium Road, Bonth Chhak, Bhadrak
             </span>
-          </div>
+          </a>
         </div>
 
         {/* Right: Odia Trigger + Important Notice */}
-        <div className="flex flex-wrap items-center gap-2.5">
+        <div className="flex flex-wrap items-center justify-center gap-2.5">
           <button
             type="button"
             onClick={() => {
@@ -42,7 +59,7 @@ export function TopInfoBar() {
                 window.dispatchEvent(new CustomEvent('open-odia-modal'));
               }
             }}
-            className="inline-flex items-center gap-1.5 px-3 py-0.5 rounded-full bg-slate-800/90 border border-amber-400/80 text-amber-300 hover:text-white hover:border-amber-300 text-[11px] font-odia font-bold transition-all hover:scale-105 active:scale-95 shadow-xs cursor-pointer"
+            className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-800/90 border border-amber-400/80 text-amber-300 hover:text-white hover:border-amber-300 text-[11px] font-odia font-bold transition-all hover:scale-105 active:scale-95 shadow-xs cursor-pointer min-h-[28px]"
             title="ଓଡ଼ିଆରେ ସତ୍ୟଭାମା ହେଲଥ୍ କେୟାର ସୂଚନା ଦେଖନ୍ତୁ"
           >
             <span className="w-1.5 h-1.5 rounded-full bg-amber-400 animate-pulse" />

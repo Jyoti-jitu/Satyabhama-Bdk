@@ -8,11 +8,14 @@ export const metadata = {
   title: 'Terms & Conditions for Doctor Consultation | Satyabhama Health Care, Bhadrak',
   description:
     'Terms and conditions for doctor consultation and website usage policies at Satyabhama Health Care in Bhadrak, Odisha.',
+  alternates: {
+    canonical: 'https://satyabhamahealthcare.in/terms',
+  },
 };
 
 export default function TermsPage() {
   return (
-    <div className="py-12 sm:py-16 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
+    <div className="py-6 sm:py-12 max-w-[1680px] mx-auto px-3.5 sm:px-6 lg:px-8 xl:px-10 space-y-6 sm:space-y-12">
       <div>
         <Link
           href="/"
@@ -27,16 +30,16 @@ export default function TermsPage() {
       <DoctorConsultationTerms id="consultation-terms" />
 
       {/* Secondary General Website Legal Terms */}
-      <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200/90 shadow-sm space-y-8 text-slate-700 text-sm leading-relaxed max-w-4xl mx-auto">
-        <div className="border-b border-slate-100 pb-6 space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-xs font-semibold">
+      <div className="bg-white p-4 sm:p-10 md:p-12 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-sm space-y-6 sm:space-y-8 text-slate-700 text-xs sm:text-sm leading-relaxed max-w-4xl mx-auto">
+        <div className="border-b border-slate-100 pb-4 sm:pb-6 space-y-2">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-slate-100 text-slate-800 text-[11px] sm:text-xs font-semibold">
             <FileText className="w-3.5 h-3.5 text-slate-600" />
             <span>Website Terms of Use</span>
           </div>
-          <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             Terms & Conditions
           </h1>
-          <p className="text-xs text-slate-400">
+          <p className="text-[11px] sm:text-xs text-slate-400">
             Effective Date: October 2026 • Satyabhama Health Care, Bhadrak
           </p>
         </div>

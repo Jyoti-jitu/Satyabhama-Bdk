@@ -26,17 +26,17 @@ import {
 } from './mock-db';
 
 const STORAGE_KEYS = {
-  SETTINGS: 'satyabhama_settings',
-  DOCTORS: 'satyabhama_doctors',
-  SPECIALTIES: 'satyabhama_specialties',
-  SCHEDULES: 'satyabhama_schedules',
-  EXCEPTIONS: 'satyabhama_exceptions',
-  CHANGE_REQUESTS: 'satyabhama_change_requests',
-  FAQS: 'satyabhama_faqs',
-  ARTICLES: 'satyabhama_articles',
-  ANNOUNCEMENTS: 'satyabhama_announcements',
-  AUDIT_LOGS: 'satyabhama_audit_logs',
-  USERS: 'satyabhama_users',
+  SETTINGS: 'satyabhama_settings_v3',
+  DOCTORS: 'satyabhama_doctors_v3',
+  SPECIALTIES: 'satyabhama_specialties_v3',
+  SCHEDULES: 'satyabhama_schedules_v3',
+  EXCEPTIONS: 'satyabhama_exceptions_v3',
+  CHANGE_REQUESTS: 'satyabhama_change_requests_v3',
+  FAQS: 'satyabhama_faqs_v3',
+  ARTICLES: 'satyabhama_articles_v3',
+  ANNOUNCEMENTS: 'satyabhama_announcements_v3',
+  AUDIT_LOGS: 'satyabhama_audit_logs_v3',
+  USERS: 'satyabhama_users_v3',
 };
 
 class DataStore {
@@ -68,31 +68,16 @@ class DataStore {
       const storedDoctors = localStorage.getItem(STORAGE_KEYS.DOCTORS);
       if (storedDoctors) {
         const parsed = JSON.parse(storedDoctors);
-        // Verify if stored data matches the required 8 doctors in exact serial order
-        const matchesEightOrder =
+        // Verify if stored data matches the official 10 doctors in exact serial order
+        const matchesTenOrder =
           Array.isArray(parsed) &&
-          parsed.length >= 8 &&
-          parsed[0]?.id === 'doc-1' &&
+          parsed.length === 10 &&
           parsed[0]?.slug === 'dr-priya-ranjan-barik' &&
-          parsed[1]?.id === 'doc-2' &&
-          parsed[1]?.slug === 'dr-sanjay-pany' &&
-          parsed[2]?.id === 'doc-3' &&
-          parsed[2]?.slug === 'dr-tanmay-padhy' &&
-          parsed[3]?.id === 'doc-4' &&
-          parsed[3]?.slug === 'dr-subhada-pattnaik' &&
-          parsed[3]?.profile_image_url === '/images/doctors/dr-subhada-pattnaik.png' &&
-          parsed[4]?.id === 'doc-5' &&
-          parsed[4]?.slug === 'dr-subhranshu-sekhar-lenka' &&
-          parsed[4]?.profile_image_url === '/images/doctors/dr-subhranshu-sekhar-lenka.jpg' &&
-          parsed[5]?.id === 'doc-6' &&
-          parsed[5]?.slug === 'dr-dillip-kumar-chand' &&
-          parsed[6]?.id === 'doc-7' &&
-          parsed[6]?.slug === 'dr-srikant-acharya' &&
-          parsed[7]?.id === 'doc-8' &&
-          parsed[7]?.slug === 'dr-sabyasachi-pati';
+          parsed[3]?.slug === 'dr-swarupananda-mishra' &&
+          parsed[9]?.slug === 'dr-subharansu-sekhar-lenka';
 
-        if (!matchesEightOrder) {
-          // Fresh sync to ensure the 8 doctors are in exact serial order
+        if (!matchesTenOrder) {
+          // Fresh sync to ensure the 10 doctors are in exact serial order
           this.doctors = [...INITIAL_DOCTORS];
           this.schedules = [...INITIAL_SCHEDULES];
           this.saveItem(STORAGE_KEYS.DOCTORS, this.doctors);

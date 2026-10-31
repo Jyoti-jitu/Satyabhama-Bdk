@@ -7,11 +7,14 @@ export const metadata = {
   title: 'Privacy Policy | Satyabhama Health Care, Bhadrak',
   description:
     'Privacy Policy and data protection standards for the informational website of Satyabhama Health Care, Bhadrak, Odisha.',
+  alternates: {
+    canonical: 'https://satyabhamahealthcare.in/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {
   return (
-    <div className="py-12 sm:py-16 max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 space-y-8">
+    <div className="py-6 sm:py-12 max-w-5xl mx-auto px-3.5 sm:px-6 lg:px-8 xl:px-10 space-y-4 sm:space-y-8">
       <div>
         <Link
           href="/"
@@ -22,16 +25,16 @@ export default function PrivacyPolicyPage() {
         </Link>
       </div>
 
-      <div className="bg-white p-8 sm:p-12 rounded-3xl border border-slate-200/90 shadow-sm space-y-8 text-slate-700 text-sm leading-relaxed">
-        <div className="border-b border-slate-100 pb-6 space-y-2">
-          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 text-teal-800 text-xs font-semibold">
+      <div className="bg-white p-4 sm:p-10 md:p-12 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-sm space-y-6 sm:space-y-8 text-slate-700 text-xs sm:text-sm leading-relaxed">
+        <div className="border-b border-slate-100 pb-4 sm:pb-6 space-y-2">
+          <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-teal-50 text-teal-800 text-[11px] sm:text-xs font-semibold">
             <ShieldCheck className="w-3.5 h-3.5 text-teal-600" />
             <span>Privacy & Data Protection</span>
           </div>
-          <h1 className="text-3xl font-extrabold text-slate-900 tracking-tight">
+          <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
             Privacy Policy
           </h1>
-          <p className="text-xs text-slate-400">
+          <p className="text-[11px] sm:text-xs text-slate-400">
             Last Updated: October 2026 • Satyabhama Health Care, Bhadrak, Odisha
           </p>
         </div>

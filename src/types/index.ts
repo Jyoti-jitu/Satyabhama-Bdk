@@ -122,6 +122,7 @@ export interface ClinicSettings {
   clinic_name: string;
   tagline: string;
   logo_url: string;
+  website_url?: string;
   address: string;
   phone: string;
   secondary_phone?: string;
@@ -154,6 +155,8 @@ export interface HealthArticle {
   content: string;
   author: string;
   category: string;
+  related_doctor_slug?: string;
+  related_specialty_slug?: string;
   read_time_minutes: number;
   publication_status: 'draft' | 'published' | 'archived';
   published_at?: string;

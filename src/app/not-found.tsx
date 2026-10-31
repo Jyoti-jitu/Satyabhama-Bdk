@@ -8,7 +8,7 @@ export default function NotFound() {
   return (
     <div className="min-h-screen bg-slate-50 flex flex-col items-center justify-center p-6 text-center">
       <div className="max-w-md w-full bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-xl space-y-6">
-        <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-rose-800 bg-white shadow-md">
+        <div className="relative w-20 h-20 mx-auto rounded-full overflow-hidden border-2 border-rose-900 bg-white shadow-md p-0.5">
           <Image
             src="/images/logo.png"
             alt="Satyabhama Health Care Logo"
