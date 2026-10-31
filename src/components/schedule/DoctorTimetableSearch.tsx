@@ -209,7 +209,7 @@ export function DoctorTimetableSearch({
           <Search className="w-5 h-5 absolute left-4 top-1/2 -translate-y-1/2 text-slate-400" />
           <input
             type="text"
-            placeholder="Search doctor by name (e.g. Mishra, Chand, Pany, Barik, Manjulata) or specialty..."
+            placeholder="Search doctor by name (e.g. Barik, Pany, Chand, Padhy, Pati, Acharya) or specialty..."
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
             className="w-full pl-12 pr-10 py-3.5 text-base sm:text-sm bg-slate-50 border border-slate-200/90 rounded-2xl focus:bg-white focus:outline-none focus:ring-2 focus:ring-teal-500/20 focus:border-teal-500 transition-all text-slate-900 placeholder:text-slate-400 shadow-xs"
@@ -241,7 +241,7 @@ export function DoctorTimetableSearch({
                 : 'bg-slate-100 text-slate-700 hover:bg-slate-200 border border-slate-200/80'
             }`}
           >
-            All 10 Doctors
+            All {DOCTOR_TIMINGS.length} Doctors
           </button>
           {specialties.map((spec) => (
             <button
@@ -296,7 +296,7 @@ export function DoctorTimetableSearch({
                 onClick={handleReset}
                 className="inline-flex items-center gap-1.5 px-4 py-2 rounded-xl bg-teal-600 text-white font-bold text-xs shadow-sm hover:bg-teal-700 transition-colors"
               >
-                Show All 10 Doctors
+                Show All {DOCTOR_TIMINGS.length} Doctors
               </button>
             </div>
           ) : (

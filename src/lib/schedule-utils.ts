@@ -192,6 +192,17 @@ export function calculateUpcomingConsultations(
           if (rec.effective_from && targetDateStr < rec.effective_from) continue;
           if (rec.effective_until && targetDateStr > rec.effective_until) continue;
 
+          // Check monthly week filter if specified (e.g. 1st Saturday, 2nd & 4th Saturday)
+          const [, , dayPart] = targetDateStr.split('-').map(Number);
+          const weekOfMonth = Math.ceil(dayPart / 7);
+          if (rec.monthly_weeks && rec.monthly_weeks.length > 0) {
+            if (!rec.monthly_weeks.includes(weekOfMonth)) {
+              continue;
+            }
+          }
+
+          const isMonthlySpecial = Boolean(rec.monthly_weeks && rec.monthly_weeks.length > 0);
+
           results.push({
             id: `rec-${rec.id}-${targetDateStr}`,
             doctor_id: doc.id,
@@ -205,9 +216,10 @@ export function calculateUpcomingConsultations(
             day_name: dayName,
             start_time: rec.start_time,
             end_time: rec.end_time,
-            schedule_type: 'regular',
-            status_label: 'Regular Schedule',
+            schedule_type: isMonthlySpecial ? 'special_clinic' : 'regular',
+            status_label: isMonthlySpecial ? 'Special Clinic' : 'Regular Schedule',
             is_exception: false,
+            notes: rec.notes,
           });
         }
       }

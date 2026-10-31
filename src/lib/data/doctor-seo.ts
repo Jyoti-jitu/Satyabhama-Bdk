@@ -22,95 +22,100 @@ export interface DoctorSEOEntity {
 }
 
 export const DOCTOR_SEO_MAP: Record<string, DoctorSEOEntity> = {
-  'dr-swarupananda-mishra': {
+  'dr-sabyasachi-pati': {
     id: 'doc-4',
-    slug: 'dr-swarupananda-mishra',
-    fullName: 'Dr. Swarupananda Mishra',
-    specialtyName: 'ENT / Ear, Nose and Throat',
+    slug: 'dr-sabyasachi-pati',
+    fullName: 'Dr. Sabyasachi Pati',
+    specialtyName: 'ENT & Head and Neck Surgery',
     specialtySlug: 'ent',
     medicalSpecialtySchema: 'Otolaryngologic',
-    qualifications: 'MBBS, MS (ENT)',
-    professionalRole: 'Consultant ENT Surgeon, Cuttack ENT Care',
-    affiliations: ['Cuttack ENT Care', 'Satyabhama Health Care, Bhadrak'],
+    qualifications: 'MBBS, MS (ENT & HNS)',
+    professionalRole: 'Otorhinolaryngologist & Head and Neck Surgeon',
+    affiliations: ['SCB Medical College & Hospital, Cuttack', 'Satyabhama Health Care, Bhadrak'],
     consultantType: 'visiting',
-    titleTag: 'Dr. Swarupananda Mishra – ENT Specialist in Bhadrak | Satyabhama Health Care',
+    titleTag: 'Dr. Sabyasachi Pati – ENT & Head Neck Surgeon in Bhadrak | Satyabhama Health Care',
     metaDescription:
-      'Find consultation information for Dr. Swarupananda Mishra, Consultant ENT Surgeon at Satyabhama Health Care, Bhadrak, Odisha. Call 7008610481 to confirm availability.',
+      'Find consultation information for Dr. Sabyasachi Pati, Otorhinolaryngologist & Head and Neck Surgeon (MS ENT & HNS, SCB MCH Cuttack) at Satyabhama Health Care, Bhadrak. Call 7008610481.',
     targetKeywords: [
-      'Dr. Swarupananda Mishra',
-      'Dr. Swarupananda Mishra ENT',
-      'Dr. Swarupananda Mishra Bhadrak',
+      'Dr. Sabyasachi Pati',
+      'Dr. Sabyasachi Pati ENT Bhadrak',
       'ENT specialist in Bhadrak',
+      'Head neck surgeon Bhadrak',
       'Satyabhama Health Care ENT doctor',
     ],
-    canonicalUrl: `${SITE_URL}/doctors/dr-swarupananda-mishra`,
+    canonicalUrl: `${SITE_URL}/doctors/dr-sabyasachi-pati`,
     relatedArticleSlug: 'how-to-find-an-ent-specialist-in-bhadrak',
     relatedArticleTitle: 'How to Find an ENT Specialist in Bhadrak: Guide to Ear, Nose & Throat Consultations',
     clinicalFocus: [
-      'Chronic sinus disease & nasal polyps evaluation',
-      'Hearing impairment, tinnitus & vertigo assessment',
-      'Tonsillitis, adenoid disorders & throat infections',
-      'Endoscopic ear and laryngeal diagnostic review',
+      'Ear disorders: hearing loss, ear infections & tinnitus',
+      'Nasal & sinus conditions: sinusitis, nasal polyps & obstruction',
+      'Throat ailments: tonsillitis, voice disorders & laryngeal conditions',
+      'Head & neck surgical evaluation and counseling',
     ],
     faqs: [
       {
-        question: 'When is Dr. Swarupananda Mishra available for consultation at Satyabhama Health Care?',
+        question: 'When is Dr. Sabyasachi Pati available at Satyabhama Health Care?',
         answer:
-          'Dr. Swarupananda Mishra consults as a visiting ENT specialist on designated monthly and weekly dates. Patients are strongly advised to call clinic reception at +91 70086 10481 or +91 76818 62111 to verify current week dates before visiting.',
+          'Dr. Sabyasachi Pati consults on the 2nd and 4th Saturday of every month from 9:00 AM to 10:00 AM at Satyabhama Health Care, Stadium Road, Bhadrak.',
       },
       {
-        question: 'What conditions does Dr. Swarupananda Mishra treat at the Bhadrak clinic?',
+        question: 'What conditions does Dr. Sabyasachi Pati treat?',
         answer:
-          'He provides clinical evaluation and surgical counseling for ear discharge, hearing loss, vertigo, chronic sinusitis, nasal obstruction, tonsillitis, voice changes, and throat ailments.',
+          'He provides clinical evaluation and surgical counseling for ear discharge, hearing loss, sinusitis, nasal obstruction, tonsillitis, voice changes, throat ailments, and head & neck surgical conditions.',
       },
       {
-        question: 'How do I book or confirm an appointment with Dr. Swarupananda Mishra in Bhadrak?',
+        question: 'How do I confirm a consultation with Dr. Sabyasachi Pati in Bhadrak?',
         answer:
-          'Satyabhama Health Care operates on a direct walk-in consultation model with scheduled slots. There are no online booking forms. Please call the reception desk at +91 70086 10481 to confirm doctor arrival and collect a registration token.',
+          'Satyabhama Health Care operates on a walk-in consultation model. Please call reception at +91 70086 10481 to confirm the doctor\'s availability and collect a registration token.',
       },
     ],
   },
 
-  'dr-manjulata-dash': {
+  'dr-srikanta-acharya': {
     id: 'doc-5',
-    slug: 'dr-manjulata-dash',
-    fullName: 'Dr. Manjulata Dash',
+    slug: 'dr-srikanta-acharya',
+    fullName: 'Dr. Srikanta Acharya',
     specialtyName: 'Dermatology / Skin & VD',
     specialtySlug: 'dermatology',
     medicalSpecialtySchema: 'Dermatology',
     qualifications: 'MBBS, MD (Skin & VD)',
-    professionalRole: 'Associate Professor, SCB Medical College, Cuttack',
+    professionalRole: 'Consultant Dermatologist & Venereologist, SCB Medical College, Cuttack',
     affiliations: ['SCB Medical College & Hospital, Cuttack', 'Satyabhama Health Care, Bhadrak'],
     consultantType: 'visiting',
-    titleTag: 'Dr. Manjulata Dash – Dermatologist in Bhadrak | Satyabhama Health Care',
+    titleTag: 'Dr. Srikanta Acharya – Skin & VD Specialist in Bhadrak | Satyabhama Health Care',
     metaDescription:
-      'Find consultation information for Dr. Manjulata Dash, Associate Professor, SCB Medical College & Skin Specialist at Satyabhama Health Care, Bhadrak, Odisha. Call 7008610481.',
+      'Find consultation information for Dr. Srikanta Acharya, Skin & VD Specialist from SCB Medical College, Cuttack at Satyabhama Health Care, Bhadrak, Odisha. Call 7008610481.',
     targetKeywords: [
-      'Dr. Manjulata Dash',
-      'Dr. Manjulata Dash dermatologist',
-      'Dr. Manjulata Dash Bhadrak',
+      'Dr. Srikanta Acharya',
+      'Dr. Srikanta Acharya dermatologist',
+      'Dr. Srikanta Acharya Bhadrak',
       'Skin specialist in Bhadrak',
       'Dermatologist at Satyabhama Health Care',
     ],
-    canonicalUrl: `${SITE_URL}/doctors/dr-manjulata-dash`,
+    canonicalUrl: `${SITE_URL}/doctors/dr-srikanta-acharya`,
     relatedArticleSlug: 'understanding-when-to-consult-a-dermatologist',
     relatedArticleTitle: 'Understanding When to Consult a Dermatologist for Chronic Skin Conditions',
     clinicalFocus: [
-      'Chronic eczema, psoriasis & dermatitis management',
-      'Fungal, bacterial and viral dermatological infections',
-      'Acne vulgaris, pigmentary disorders & allergy tests',
-      'Venereology, sexual health & scalp disorder evaluations',
+      'Acne vulgaris, pigmentation & skin brightening evaluation',
+      'Warts, molluscum & viral skin infections',
+      'Hair loss, alopecia & scalp disorder assessment',
+      'Venereology, sexual health & skin allergy evaluation',
     ],
     faqs: [
       {
-        question: 'How can I consult Dr. Manjulata Dash for skin problems in Bhadrak?',
+        question: 'When is Dr. Srikanta Acharya available at Satyabhama Health Care?',
         answer:
-          'Dr. Manjulata Dash attends scheduled outpatient clinics at Satyabhama Health Care, Stadium Road, Bhadrak. Contact the clinic helpline at +91 70086 10481 to check her upcoming visit date.',
+          'Dr. Srikanta Acharya visits on the 1st and 2nd Tuesday of every month from 2:00 PM to 4:00 PM at Satyabhama Health Care, Stadium Road, Bhadrak.',
       },
       {
-        question: 'What skin ailments does Dr. Manjulata Dash evaluate?',
+        question: 'What skin conditions does Dr. Srikanta Acharya treat?',
         answer:
-          'As an Associate Professor at SCB Medical College, she handles complex dermatology cases including severe eczema, psoriasis, recurrent ringworm/fungal infections, resistant acne, hair loss, and sexually transmitted skin disorders.',
+          'He provides consultations for acne, pigmentation, warts, hair loss, fungal skin infections, eczema, psoriasis, and venereal diseases (VD).',
+      },
+      {
+        question: 'How do I confirm a consultation with Dr. Srikanta Acharya in Bhadrak?',
+        answer:
+          'Satyabhama Health Care operates on a walk-in consultation model. Call reception at +91 70086 10481 to confirm the doctor\'s availability and collect a token.',
       },
     ],
   },
@@ -159,50 +164,6 @@ export const DOCTOR_SEO_MAP: Record<string, DoctorSEOEntity> = {
     ],
   },
 
-  'dr-rama-chandra-deo': {
-    id: 'doc-6',
-    slug: 'dr-rama-chandra-deo',
-    fullName: 'Dr. Rama Chandra Deo',
-    specialtyName: 'Neurosurgery and Spine',
-    specialtySlug: 'neurosurgery',
-    medicalSpecialtySchema: 'Neurosurgical',
-    qualifications: 'M.Ch. Neurosurgery, MS General Surgery',
-    professionalRole: 'Associate Professor, Neurosurgery',
-    affiliations: ['Associate Professor, Neurosurgery (SUM Hospital / SCB MCH)', 'Satyabhama Health Care, Bhadrak'],
-    consultantType: 'visiting',
-    titleTag: 'Dr. Rama Chandra Deo – Neurosurgeon in Bhadrak | Satyabhama Health Care',
-    metaDescription:
-      'Find consultation information for Dr. Rama Chandra Deo, Associate Professor of Neurosurgery (M.Ch. Neuro) at Satyabhama Health Care, Bhadrak, Odisha. Call 7008610481.',
-    targetKeywords: [
-      'Dr. Rama Chandra Deo',
-      'Dr. Rama Chandra Deo neurosurgeon',
-      'Dr. Rama Chandra Deo Bhadrak',
-      'Neurosurgeon in Bhadrak',
-      'Spine specialist in Bhadrak',
-    ],
-    canonicalUrl: `${SITE_URL}/doctors/dr-rama-chandra-deo`,
-    relatedArticleSlug: 'understanding-the-role-of-a-neurosurgeon',
-    relatedArticleTitle: 'Understanding the Role of a Neurosurgeon: Brain, Spine & Nerve Consultations',
-    clinicalFocus: [
-      'Spinal disc herniation, cervical myelopathy & sciatica surgery review',
-      'Brain tumor, pituitary adenoma & skull base lesion counseling',
-      'Hydrocephalus, cranial neuropathies & nerve entrapment syndromes',
-      'Head injury follow-up & traumatic spinal cord injury advisory',
-    ],
-    faqs: [
-      {
-        question: 'How do I consult Dr. Rama Chandra Deo for spine and brain conditions in Bhadrak?',
-        answer:
-          'Dr. Rama Chandra Deo attends visiting neurosurgical super-specialty clinics at Satyabhama Health Care on announced dates. Please bring your MRI/CT scan reports and call +91 70086 10481 to verify the next clinic date.',
-      },
-      {
-        question: 'Is Dr. Rama Chandra Deo an Associate Professor of Neurosurgery?',
-        answer:
-          'Yes, Dr. Rama Chandra Deo holds an M.Ch. in Neurosurgery with extensive surgical and academic experience as an Associate Professor, including specialized fellowship training from AIIMS, New Delhi.',
-      },
-    ],
-  },
-
   'dr-sanjay-pany': {
     id: 'doc-2',
     slug: 'dr-sanjay-pany',
@@ -247,189 +208,56 @@ export const DOCTOR_SEO_MAP: Record<string, DoctorSEOEntity> = {
     ],
   },
 
-  'dr-umesh-chandra-jena': {
-    id: 'doc-7',
-    slug: 'dr-umesh-chandra-jena',
-    fullName: 'Dr. Umesh Chandra Jena',
-    specialtyName: 'Paediatrics and Child Health',
-    specialtySlug: 'paediatrics',
-    medicalSpecialtySchema: 'Pediatric',
-    qualifications: 'MBBS, MD Pediatrics / DCH',
-    professionalRole: 'Senior Pediatrician',
-    affiliations: ['Senior Pediatrician, Bhadrak', 'Satyabhama Health Care, Bhadrak'],
-    consultantType: 'regular',
-    titleTag: 'Dr. Umesh Chandra Jena – Pediatrician in Bhadrak | Satyabhama Health Care',
-    metaDescription:
-      'Find consultation information for Dr. Umesh Chandra Jena, Senior Pediatrician & Child Specialist at Satyabhama Health Care, Stadium Road, Bhadrak, Odisha. Call 7008610481.',
-    targetKeywords: [
-      'Dr. Umesh Chandra Jena',
-      'Dr. Umesh Chandra Jena Bhadrak',
-      'Dr. Umesh Chandra Jena pediatrician',
-      'Child specialist in Bhadrak',
-      'Pediatrician at Satyabhama Health Care',
-    ],
-    canonicalUrl: `${SITE_URL}/doctors/dr-umesh-chandra-jena`,
-    relatedArticleSlug: 'child-healthcare-consultations-in-bhadrak',
-    relatedArticleTitle: 'Child Healthcare Consultations in Bhadrak: Infant Nutrition, Growth & Fever Care',
-    clinicalFocus: [
-      'Infant and newborn health monitoring & developmental milestones',
-      'Childhood seasonal viral fevers, pneumonia & respiratory care',
-      'Pediatric gastrointestinal infections & nutritional guidance',
-      'Vaccination advisory & preventative child health checkups',
-    ],
-    faqs: [
-      {
-        question: 'Where does Dr. Umesh Chandra Jena see pediatric patients in Bhadrak?',
-        answer:
-          'Dr. Umesh Chandra Jena consults regularly at Satyabhama Health Care, situated on Stadium Road near Nehru Stadium and Bonth Chhak, Bhadrak. Call +91 70086 10481 for current week sessions.',
-      },
-      {
-        question: 'What age group of children can consult with Dr. Jena?',
-        answer:
-          'He provides medical care for newborns, infants, young children, and adolescents up to age 16.',
-      },
-    ],
-  },
-
-  'dr-shakti-prasad-choudhury': {
-    id: 'doc-8',
-    slug: 'dr-shakti-prasad-choudhury',
-    fullName: 'Dr. Shakti Prasad Choudhury',
-    specialtyName: 'Gastroenterology and Hepatology',
-    specialtySlug: 'gastroenterology',
-    medicalSpecialtySchema: 'Gastroenterology',
-    qualifications: 'MD Medicine, DM Hepatology, New Delhi',
-    professionalRole: 'Gastroenterologist and Hepatologist, associated with Fortis Hospital Mumbai and Kalinga Hospital Bhubaneswar',
-    affiliations: ['Fortis Hospital, Mumbai', 'Kalinga Hospital, Bhubaneswar', 'Satyabhama Health Care, Bhadrak'],
-    consultantType: 'visiting',
-    titleTag: 'Dr. Shakti Prasad Choudhury – Gastroenterologist in Bhadrak | Satyabhama Health Care',
-    metaDescription:
-      'Find consultation information for Dr. Shakti Prasad Choudhury, DM Hepatology (New Delhi), Gastroenterologist at Satyabhama Health Care, Bhadrak, Odisha. Call 7008610481.',
-    targetKeywords: [
-      'Dr. Shakti Prasad Choudhury',
-      'Dr. Shakti Prasad Choudhury gastroenterologist',
-      'Dr. Shakti Prasad Choudhury hepatologist',
-      'Gastroenterologist in Bhadrak',
-      'Liver specialist in Bhadrak',
-    ],
-    canonicalUrl: `${SITE_URL}/doctors/dr-shakti-prasad-choudhury`,
-    relatedArticleSlug: 'when-to-consult-a-gastroenterologist-liver-care',
-    relatedArticleTitle: 'When to Consult a Gastroenterologist: Jaundice, Fatty Liver & Acid Reflux Guide',
-    clinicalFocus: [
-      'Fatty liver disease (NAFLD/NASH), hepatitis & cirrhosis management',
-      'Acid peptic disease, chronic GERD & gastritis management',
-      'Gallbladder stones, jaundice & chronic pancreatitis advisory',
-      'Ulcerative colitis, Crohn’s disease & irritable bowel syndrome (IBS)',
-    ],
-    faqs: [
-      {
-        question: 'How can I consult Dr. Shakti Prasad Choudhury for liver and stomach problems in Bhadrak?',
-        answer:
-          'Dr. Shakti Prasad Choudhury conducts scheduled visiting gastroenterology clinics at Satyabhama Health Care, Bhadrak. Contact the reception desk at +91 70086 10481 to confirm the date of the next visit.',
-      },
-      {
-        question: 'What are the qualifications of Dr. Shakti Prasad Choudhury?',
-        answer:
-          'Dr. Choudhury holds an MD in General Medicine and a super-specialty DM in Hepatology from New Delhi, with leadership experience at Fortis Hospital, Mumbai and Kalinga Hospital, Bhubaneswar.',
-      },
-    ],
-  },
-
   'dr-priya-ranjan-barik': {
     id: 'doc-1',
     slug: 'dr-priya-ranjan-barik',
     fullName: 'Dr. Priya Ranjan Barik',
-    specialtyName: 'General Medicine, Pulmonology & Diabetes',
+    specialtyName: 'General Medicine, Diabetes & Nephrology',
     specialtySlug: 'general-medicine',
-    medicalSpecialtySchema: ['Pulmonary', 'GeneralMedicine'],
-    qualifications: 'MBBS, MD (Medicine), subject to verification',
-    professionalRole: 'Senior Consultant Physician & Specialist',
+    medicalSpecialtySchema: ['GeneralMedicine', 'Nephrology'],
+    qualifications: 'MD (Medicine), Ex-SR Nephrology, Diabetologist PHFI (CCEBDM)',
+    professionalRole: 'Associate Professor, Department of Medicine',
     affiliations: [
-      'Associated with Fakir Mohan Medical College & Hospital, Balasore',
-      'Sri Jagannath Medical College & Hospital, Puri',
+      'J.K. Medical College & Hospital, Jajpur',
       'Satyabhama Health Care, Bhadrak',
     ],
     consultantType: 'regular',
-    titleTag: 'Dr. Priya Ranjan Barik – Physician & Pulmonologist in Bhadrak | Satyabhama Health Care',
+    titleTag: 'Dr. Priya Ranjan Barik – Physician, Diabetologist & Nephrologist in Bhadrak | Satyabhama Health Care',
     metaDescription:
-      'Find consultation information for Dr. Priya Ranjan Barik, Consultant Physician & Pulmonologist at Satyabhama Health Care, Stadium Road, Bhadrak, Odisha. Call 7008610481.',
+      'Find consultation information for Dr. Priya Ranjan Barik, Associate Professor of Medicine (J.K. Medical College, Jajpur), Diabetologist & Nephrologist at Satyabhama Health Care, Bhadrak. Call 7008610481.',
     targetKeywords: [
       'Dr. Priya Ranjan Barik',
       'Dr. Priya Ranjan Barik Bhadrak',
       'Dr. Priya Ranjan Barik physician',
-      'Pulmonologist in Bhadrak',
-      'Diabetes specialist in Bhadrak',
+      'Diabetologist in Bhadrak',
+      'Nephrologist in Bhadrak',
       'General physician in Bhadrak',
     ],
     canonicalUrl: `${SITE_URL}/doctors/dr-priya-ranjan-barik`,
     relatedArticleSlug: 'diabetes-consultations-ongoing-medical-care',
     relatedArticleTitle: 'Diabetes Consultations & Ongoing Medical Care: Managing Blood Sugar & Complications',
     clinicalFocus: [
-      'Pulmonary conditions, bronchial asthma, COPD & chronic cough',
       'Type 2 diabetes mellitus glycemic control & complication screening',
+      'Kidney health, nephrology evaluation & chronic kidney disease management',
       'Hypertension, cardiovascular risk factors & dyslipidemia',
-      'Prolonged seasonal fevers, tropical infections & general adult medicine',
+      'General adult medicine: fevers, infections & systemic conditions',
     ],
     faqs: [
       {
         question: 'How do I consult Dr. Priya Ranjan Barik at Satyabhama Health Care, Bhadrak?',
         answer:
-          'Dr. Priya Ranjan Barik consults daily on scheduled morning and evening sessions. Because emergency clinical duties at partner government medical institutions may occur, patients are strongly advised to call clinic reception at +91 70086 10481 before travelling.',
+          'Dr. Priya Ranjan Barik consults daily on scheduled morning and evening sessions. Patients are advised to call clinic reception at +91 70086 10481 before visiting to confirm availability.',
       },
       {
         question: 'What clinical disciplines does Dr. Priya Ranjan Barik focus on?',
         answer:
-          'His primary clinical practice focuses on General Medicine, Pulmonology (chest and lung conditions such as asthma, COPD, and persistent cough), and long-term Diabetes Care management.',
-      },
-    ],
-  },
-
-  'dr-soudamini-dhal': {
-    id: 'doc-9',
-    slug: 'dr-soudamini-dhal',
-    fullName: 'Dr. Soudamini Dhal',
-    specialtyName: 'Obstetrics and Gynaecology',
-    specialtySlug: 'gynaecology',
-    medicalSpecialtySchema: 'Obstetric',
-    qualifications: 'MBBS, MD Obstetrics & Gynaecology (subject to verification)',
-    professionalRole: 'Consultant Obstetrician and Gynaecologist',
-    affiliations: ['Consultant Obstetrician & Gynaecologist, Bhadrak', 'Satyabhama Health Care, Bhadrak'],
-    consultantType: 'regular',
-    titleTag: 'Dr. Soudamini Dhal – Gynecologist in Bhadrak | Satyabhama Health Care',
-    metaDescription:
-      'Find consultation information for Dr. Soudamini Dhal, Consultant Obstetrician & Gynecologist at Satyabhama Health Care, Stadium Road, Bhadrak, Odisha. Call 7008610481.',
-    targetKeywords: [
-      'Dr. Soudamini Dhal',
-      'Dr. Soudamini Dhal Bhadrak',
-      'Dr. Soudamini Dhal gynecologist',
-      'Gynecologist in Bhadrak',
-      'Women\'s health specialist in Bhadrak',
-    ],
-    canonicalUrl: `${SITE_URL}/doctors/dr-soudamini-dhal`,
-    relatedArticleSlug: 'womens-health-gynaecological-consultations-in-bhadrak',
-    relatedArticleTitle: 'Women’s Health & Gynaecological Consultations: Antenatal Care, Menstrual Health & Wellness',
-    clinicalFocus: [
-      'Comprehensive antenatal care & pregnancy wellness checkups',
-      'Menstrual irregularities, heavy bleeding & dysmenorrhea',
-      'Polycystic ovary syndrome (PCOS/PCOD) lifestyle and medical care',
-      'Pelvic pain, reproductive tract infections & menopausal transitions',
-    ],
-    faqs: [
-      {
-        question: 'Where can I consult Dr. Soudamini Dhal for women’s health concerns in Bhadrak?',
-        answer:
-          'Dr. Soudamini Dhal provides confidential consultations at Satyabhama Health Care, Nehru Stadium Road, near Bonth Chhak, Bhadrak. Telephone verification is available via +91 70086 10481.',
-      },
-      {
-        question: 'Does Dr. Soudamini Dhal provide antenatal pregnancy reviews?',
-        answer:
-          'Yes, her clinical services include routine antenatal care checkups, maternal nutrition advice, fetal growth monitoring, and postnatal reviews.',
+          'His practice covers General Medicine, Diabetes (certified Diabetologist, PHFI CCEBDM), and Nephrology (Ex-Senior Resident in Nephrology). He is an Associate Professor at J.K. Medical College & Hospital, Jajpur.',
       },
     ],
   },
 
   'dr-subharansu-sekhar-lenka': {
-    id: 'doc-10',
+    id: 'doc-6',
     slug: 'dr-subharansu-sekhar-lenka',
     fullName: 'Dr. Subharansu Sekhar Lenka',
     specialtyName: 'General and Laparoscopic Surgery',
@@ -468,6 +296,100 @@ export const DOCTOR_SEO_MAP: Record<string, DoctorSEOEntity> = {
         question: 'How can I schedule a surgical consultation with Dr. Subharansu Sekhar Lenka in Bhadrak?',
         answer:
           'Visit Satyabhama Health Care on Stadium Road, Bhadrak, or call clinic reception at +91 70086 10481 to verify consultation slots and token availability.',
+      },
+    ],
+  },
+
+  'dr-tanmaya-padhy': {
+    id: 'doc-11',
+    slug: 'dr-tanmaya-padhy',
+    fullName: 'Dr. Tanmaya Padhy',
+    specialtyName: 'Neurology',
+    specialtySlug: 'neurosurgery',
+    medicalSpecialtySchema: 'Neurologic',
+    qualifications: 'MD (Medicine), DM (Neurology)',
+    professionalRole: 'Consultant Neurologist',
+    affiliations: ['SCB Medical College & Hospital, Cuttack', 'Satyabhama Health Care, Bhadrak'],
+    consultantType: 'visiting',
+    titleTag: 'Dr. Tanmaya Padhy – Neurologist in Bhadrak | Satyabhama Health Care',
+    metaDescription:
+      'Find consultation information for Dr. Tanmaya Padhy, DM (Neurology), Consultant Neurologist from SCB Medical College, Cuttack at Satyabhama Health Care, Bhadrak. Call 7008610481.',
+    targetKeywords: [
+      'Dr. Tanmaya Padhy',
+      'Dr. Tanmaya Padhy neurologist',
+      'Dr. Tanmaya Padhy Bhadrak',
+      'Neurologist in Bhadrak',
+      'Neurology specialist Bhadrak',
+    ],
+    canonicalUrl: `${SITE_URL}/doctors/dr-tanmaya-padhy`,
+    clinicalFocus: [
+      'Epilepsy, seizure disorders & anti-epileptic therapy management',
+      'Stroke evaluation, cerebrovascular risk & rehabilitation advisory',
+      'Headache, migraine & tension-type headache management',
+      "Neuropathy, Parkinson's disease & movement disorder evaluation",
+    ],
+    faqs: [
+      {
+        question: 'When is Dr. Tanmaya Padhy available at Satyabhama Health Care?',
+        answer:
+          'Dr. Tanmaya Padhy consults on the 4th Tuesday of every month from 10:00 AM to 12:00 PM at Satyabhama Health Care, Stadium Road, Bhadrak.',
+      },
+      {
+        question: 'What neurological conditions does Dr. Tanmaya Padhy treat?',
+        answer:
+          "He provides consultations for epilepsy, stroke, Parkinson's disease, headache disorders, neuropathy, dizziness, memory disorders, and movement conditions.",
+      },
+      {
+        question: 'How do I confirm a consultation with Dr. Tanmaya Padhy in Bhadrak?',
+        answer:
+          "Call clinic reception at +91 70086 10481 to confirm the doctor's availability and register for a token before visiting.",
+      },
+    ],
+  },
+
+  'dr-subhada-pattnaik': {
+    id: 'doc-12',
+    slug: 'dr-subhada-pattnaik',
+    fullName: 'Dr. Subhada Pattnaik',
+    specialtyName: 'Orthopedics',
+    specialtySlug: 'orthopaedics',
+    medicalSpecialtySchema: 'Orthopedic',
+    qualifications: 'MS (Orthopedics)',
+    professionalRole: 'Consultant Orthopedic Surgeon',
+    affiliations: ['Satyabhama Health Care, Bhadrak'],
+    consultantType: 'visiting',
+    titleTag: 'Dr. Subhada Pattnaik – Orthopedic Surgeon in Bhadrak | Satyabhama Health Care',
+    metaDescription:
+      'Find consultation information for Dr. Subhada Pattnaik, Consultant Orthopedic Surgeon (MS Orthopedics) at Satyabhama Health Care, Bhadrak, Odisha. Call 7008610481.',
+    targetKeywords: [
+      'Dr. Subhada Pattnaik',
+      'Dr. Subhada Pattnaik orthopedic',
+      'Dr. Subhada Pattnaik Bhadrak',
+      'Orthopedic surgeon in Bhadrak',
+      'Bone specialist Bhadrak',
+    ],
+    canonicalUrl: `${SITE_URL}/doctors/dr-subhada-pattnaik`,
+    clinicalFocus: [
+      'Bone fractures, trauma & orthopedic injury management',
+      'Joint pain, osteoarthritis & knee/hip evaluation',
+      'Spinal disorders, back pain & disc conditions',
+      'Sports injuries & musculoskeletal health',
+    ],
+    faqs: [
+      {
+        question: 'When is Dr. Subhada Pattnaik available at Satyabhama Health Care?',
+        answer:
+          'Dr. Subhada Pattnaik consults every Thursday and Friday at Satyabhama Health Care, Stadium Road, Bhadrak. Please call +91 70086 10481 for exact session timings.',
+      },
+      {
+        question: 'What orthopedic conditions does Dr. Subhada Pattnaik treat?',
+        answer:
+          'She provides consultations for bone fractures, joint pain, arthritis, spinal disorders, disc problems, sports injuries, and musculoskeletal conditions.',
+      },
+      {
+        question: 'How do I confirm a consultation with Dr. Subhada Pattnaik in Bhadrak?',
+        answer:
+          "Call clinic reception at +91 70086 10481 to confirm the doctor's availability and session timings before visiting.",
       },
     ],
   },

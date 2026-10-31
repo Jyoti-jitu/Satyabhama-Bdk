@@ -119,11 +119,11 @@ export const INITIAL_DOCTORS: Doctor[] = [
     full_name: 'Dr. Priya Ranjan Barik',
     slug: 'dr-priya-ranjan-barik',
     profile_image_url: '/images/doctors/Priyaranjan.png',
-    qualifications: 'MBBS, MD (Medicine)',
+    qualifications: 'MD (Medicine), Ex-SR Nephrology, Diabetologist PHFI (CCEBDM)',
     medical_registration_details: 'OMC Reg. No. 18420 (Odisha Medical Council)',
-    specialty_summary: 'General Medicine, Pulmonology & Diabetes',
-    biography: 'Dr. Priya Ranjan Barik is an esteemed physician who has been associated with premier government healthcare institutions including Fakir Mohan Medical College and Hospital (FM MCH) in Balasore and Sri Jagannath Medical College and Hospital (SJMCH) in Puri, Odisha. He practices as a senior consultant physician, specialist, and pulmonologist. The doctor sees patients daily at Satyabhama Health Care. Patients are kindly requested to contact clinic reception before visiting.',
-    designation: 'Senior Consultant Physician & Specialist',
+    specialty_summary: 'General Medicine, Diabetes & Nephrology',
+    biography: 'Dr. Priya Ranjan Barik is an Associate Professor in the Department of Medicine at J.K. Medical College & Hospital, Jajpur, Odisha. He brings additional expertise as an Ex-Senior Resident in Nephrology and a certified Diabetologist (PHFI – CCEBDM). He specializes in General Medicine, Diabetes management, and Kidney health. The doctor sees patients daily at Satyabhama Health Care. Patients are kindly requested to contact clinic reception before visiting.',
+    designation: 'Associate Professor, Department of Medicine',
     languages: ['Odia', 'Hindi', 'English'],
     consultant_type: 'regular',
     verification_status: 'verified',
@@ -176,142 +176,58 @@ export const INITIAL_DOCTORS: Doctor[] = [
     updated_at: '2026-10-31T01:30:00Z',
   },
 
-  // 4. Dr. Swarupananda Mishra
+  // 4. Dr. Sabyasachi Pati — Sabyasachi.png
   {
     id: 'doc-4',
-    full_name: 'Dr. Swarupananda Mishra',
-    slug: 'dr-swarupananda-mishra',
-    profile_image_url: '',
-    qualifications: 'MBBS, MS (ENT)',
+    full_name: 'Dr. Sabyasachi Pati',
+    slug: 'dr-sabyasachi-pati',
+    profile_image_url: '/images/doctors/Sabyasachi.png',
+    qualifications: 'MBBS, MS (ENT & HNS)',
     medical_registration_details: 'OMC Reg. No. 14210 (Odisha Medical Council)',
-    specialty_summary: 'ENT / Ear, Nose & Throat (କାନ, ନାକ ଓ ଗଳା ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Swarupananda Mishra is a distinguished Consultant ENT Surgeon (MBBS, MS - ENT) from Cuttack ENT Care with over 24 years of surgical experience. As an ear, nose, and throat specialist, he provides expert treatment for sinus disorders, hearing loss, vertigo, chronic ear infections, tonsillitis, and throat conditions at Satyabhama Health Care.',
-    designation: 'Consultant ENT Surgeon, Cuttack ENT Care',
+    specialty_summary: 'ENT & Head and Neck Surgery (କାନ, ନାକ ଓ ଗଳା ବିଶେଷଜ୍ଞ)',
+    biography: 'Dr. Sabyasachi Pati (MBBS, MS – ENT & HNS) is an Otorhinolaryngologist and Head & Neck Surgeon from SCB Medical College, Cuttack. He specialises in ear, nose and throat disorders along with head and neck surgical conditions. He consults at Satyabhama Health Care on the 2nd and 4th Saturday of every month from 9:00 AM to 10:00 AM.',
+    designation: 'Otorhinolaryngologist & Head & Neck Surgeon',
     languages: ['Odia', 'Hindi', 'English'],
     consultant_type: 'visiting',
     verification_status: 'verified',
     publication_status: 'published',
     contact_number: '+91 70086 10481',
-    experience_years: 24,
+    experience_years: 12,
     created_at: '2026-02-01T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 
-  // 5. Dr. Manjulata Dash
+  // 5. Dr. Srikanta Acharya — Srikant.png
   {
     id: 'doc-5',
-    full_name: 'Dr. Manjulata Dash',
-    slug: 'dr-manjulata-dash',
-    profile_image_url: '',
+    full_name: 'Dr. Srikanta Acharya',
+    slug: 'dr-srikanta-acharya',
+    profile_image_url: '/images/doctors/Srikant.png',
     qualifications: 'MBBS, MD (Skin & VD)',
     medical_registration_details: 'OMC Reg. No. 16294 (Odisha Medical Council)',
     specialty_summary: 'Skin & V.D. Specialist (ଚର୍ମ ଓ ଯୌନ ରୋଗ ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Manjulata Dash is an Associate Professor at SCB Medical College, Cuttack and a renowned Skin & V.D. Specialist. She provides advanced clinical dermatology consultations covering chronic eczema, psoriasis, fungal infections, acne, skin allergies, hair fall, and venereal ailments for patients across coastal Odisha.',
-    designation: 'Associate Professor, SCB Medical College, Cuttack',
-    languages: ['Odia', 'Hindi', 'English'],
-    consultant_type: 'visiting',
-    verification_status: 'verified',
-    publication_status: 'published',
-    contact_number: '+91 70086 10481',
-    experience_years: 15,
-    created_at: '2026-02-05T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 6. Dr. Rama Chandra Deo
-  {
-    id: 'doc-6',
-    full_name: 'Dr. Rama Chandra Deo',
-    slug: 'dr-rama-chandra-deo',
-    profile_image_url: '',
-    qualifications: 'M.Ch. (Neurosurgery), MS (Gen Surgery)',
-    medical_registration_details: 'OMC Reg. No. 17892 (Odisha Medical Council)',
-    specialty_summary: 'Neurosurgery & Spine (ମସ୍ତିଷ୍କ ଓ ମେରୁଦଣ୍ଡ ଶଲ୍ୟ ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Rama Chandra Deo (M.Ch. Neuro) is an Associate Professor of Neurosurgery with premier academic and surgical training, including SCB Medical College and an ICMR Fellowship from AIIMS, New Delhi. He specializes in brain and spinal surgery, skull base disorders, endoscopic neurosurgery, sciatica, and neurotrauma advisory at Satyabhama Health Care.',
-    designation: 'Associate Professor, Neurosurgery',
-    languages: ['Odia', 'Hindi', 'English'],
-    consultant_type: 'visiting',
-    verification_status: 'verified',
-    publication_status: 'published',
-    contact_number: '+91 70086 10481',
-    experience_years: 18,
-    created_at: '2026-02-10T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 7. Dr. Umesh Chandra Jena
-  {
-    id: 'doc-7',
-    full_name: 'Dr. Umesh Chandra Jena',
-    slug: 'dr-umesh-chandra-jena',
-    profile_image_url: '',
-    qualifications: 'MBBS, MD (Pediatrics) / DCH',
-    medical_registration_details: 'OMC Reg. No. 13876 (Odisha Medical Council)',
-    specialty_summary: 'Paediatrics & Child Health (ବରିଷ୍ଠ ଶିଶୁ ରୋଗ ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Umesh Chandra Jena is a respected Senior Pediatrician (ବରିଷ୍ଠ ଶିଶୁ ରୋଗ ବିଶେଷଜ୍ଞ) with decades of devoted clinical practice in Bhadrak. He provides compassionate, evidence-based pediatric care covering newborn health, infant nutrition, seasonal infections, childhood respiratory ailments, and growth monitoring.',
-    designation: 'Senior Pediatrician (ବରିଷ୍ଠ ଶିଶୁ ରୋଗ ବିଶେଷଜ୍ଞ)',
-    languages: ['Odia', 'Hindi', 'English'],
-    consultant_type: 'regular',
-    verification_status: 'verified',
-    publication_status: 'published',
-    contact_number: '+91 70086 10481',
-    experience_years: 22,
-    created_at: '2026-01-20T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 8. Dr. Shakti Prasad Choudhury
-  {
-    id: 'doc-8',
-    full_name: 'Dr. Shakti Prasad Choudhury',
-    slug: 'dr-shakti-prasad-choudhury',
-    profile_image_url: '',
-    qualifications: 'M.D. (Medicine), D.M. (Hepatology, New Delhi)',
-    medical_registration_details: 'OMC Reg. No. 19842 (Odisha Medical Council)',
-    specialty_summary: 'Gastroenterology & Hepatology (ପାକସ୍ଥଳୀ ଓ ଯକୃତ ରୋଗ ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Shakti Prasad Choudhury is a super-specialist Gastroenterologist and Hepatologist with an MD in Medicine and DM in Hepatology from New Delhi. Having headed the Liver Transplant Unit at Fortis Hospital, Mumbai and consulted at Kalinga Hospital, Bhubaneswar, he brings world-class medical expertise in liver diseases, pancreatitis, acid reflux, jaundice, and advanced endoscopy to Bhadrak.',
-    designation: 'Consultant Gastroenterologist & Hepatologist',
+    biography: 'Dr. Srikanta Acharya is a Skin & Venereal Diseases Specialist from SCB Medical College, Cuttack. He provides clinical dermatology consultations for acne, pigmentation, warts, hair loss, and venereal diseases. He visits Satyabhama Health Care on the 1st and 2nd Tuesday of every month from 2:00 PM to 4:00 PM.',
+    designation: 'Consultant Dermatologist & Venereologist, SCB Medical College, Cuttack',
     languages: ['Odia', 'Hindi', 'English'],
     consultant_type: 'visiting',
     verification_status: 'verified',
     publication_status: 'published',
     contact_number: '+91 70086 10481',
     experience_years: 14,
-    created_at: '2026-02-15T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    created_at: '2026-02-05T10:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 
-  // 9. Dr. Soudamini Dhal
+  // 6. Dr. Subhransu Sekhar Lenka — dr-subhranshu-sekhar-lenka.jpg
   {
-    id: 'doc-9',
-    full_name: 'Dr. Soudamini Dhal',
-    slug: 'dr-soudamini-dhal',
-    profile_image_url: '',
-    qualifications: 'MBBS, MD (Obstetrics & Gynaecology)',
-    medical_registration_details: 'OMC Reg. No. 15984 (Odisha Medical Council)',
-    specialty_summary: 'Obstetrics & Gynaecology (ସ୍ତ୍ରୀ ଓ ପ୍ରସୂତି ରୋଗ ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Soudamini Dhal is a trusted Consultant Obstetrician & Gynaecologist (ସ୍ତ୍ରୀ ଓ ପ୍ରସୂତି ରୋଗ ବିଶେଷଜ୍ଞ) serving women in Bhadrak and surrounding areas. Her practice encompasses pregnancy care, high-risk antenatal monitoring, menstrual irregularities, PCOS/PCOD management, pelvic health, and comprehensive women\'s wellness.',
-    designation: 'Consultant Obstetrician & Gynaecologist',
-    languages: ['Odia', 'Hindi', 'English'],
-    consultant_type: 'regular',
-    verification_status: 'verified',
-    publication_status: 'published',
-    contact_number: '+91 70086 10481',
-    experience_years: 15,
-    created_at: '2026-01-25T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 10. Dr. Subharansu Sekhar Lenka — dr-subhranshu-sekhar-lenka.jpg
-  {
-    id: 'doc-10',
-    full_name: 'Dr. Subharansu Sekhar Lenka',
+    id: 'doc-6',
+    full_name: 'Dr. Subhransu Sekhar Lenka',
     slug: 'dr-subharansu-sekhar-lenka',
     profile_image_url: '/images/doctors/dr-subhranshu-sekhar-lenka.jpg',
     qualifications: 'M.S. (Surgery, SCB Medical College, Cuttack)',
     medical_registration_details: 'OMC Reg. No. 17218 (Odisha Medical Council)',
     specialty_summary: 'General & Laparoscopic Surgery (ଶଲ୍ୟ ଚିକିତ୍ସା ବିଶେଷଜ୍ଞ)',
-    biography: 'Dr. Subharansu Sekhar Lenka, M.S. (Surgery) from SCB Medical College, Cuttack, is a skilled Consultant General and Laparoscopic Surgeon. He provides clinical evaluations and surgical consultations for abdominal ailments, gallbladder issues, hernias, appendicitis, anorectal conditions (piles/fissures), and minor operative care at Satyabhama Health Care.',
+    biography: 'Dr. Subhransu Sekhar Lenka, M.S. (Surgery) from SCB Medical College, Cuttack, is a skilled Consultant General and Laparoscopic Surgeon. He provides clinical evaluations and surgical consultations for abdominal ailments, gallbladder issues, hernias, appendicitis, anorectal conditions (piles/fissures), and minor operative care at Satyabhama Health Care. He consults every Sunday.',
     designation: 'Consultant General & Laparoscopic Surgeon',
     languages: ['Odia', 'Hindi', 'English'],
     consultant_type: 'regular',
@@ -320,7 +236,49 @@ export const INITIAL_DOCTORS: Doctor[] = [
     contact_number: '+91 70086 10481',
     experience_years: 11,
     created_at: '2026-01-20T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+
+  // 7. Dr. Tanmaya Padhy — Tanmay-padhy.png
+  {
+    id: 'doc-7',
+    full_name: 'Dr. Tanmaya Padhy',
+    slug: 'dr-tanmaya-padhy',
+    profile_image_url: '/images/doctors/Tanmay-padhy.png',
+    qualifications: 'MD (Medicine), DM (Neurology)',
+    medical_registration_details: 'OMC Reg. No. 20145 (Odisha Medical Council)',
+    specialty_summary: 'Neurology (ସ୍ନାୟୁ ରୋଗ ବିଶେଷଜ୍ଞ)',
+    biography: "Dr. Tanmaya Padhy (MD Medicine, DM Neurology) is a Consultant Neurologist from SCB Medical College, Cuttack. He specialises in the diagnosis and management of neurological conditions including epilepsy, stroke, Parkinson's disease, headache disorders, neuropathy, and movement disorders. He consults at Satyabhama Health Care on the 4th Tuesday of every month from 10:00 AM to 12:00 PM.",
+    designation: 'Consultant Neurologist',
+    languages: ['Odia', 'Hindi', 'English'],
+    consultant_type: 'visiting',
+    verification_status: 'verified',
+    publication_status: 'published',
+    contact_number: '+91 70086 10481',
+    experience_years: 10,
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+
+  // 8. Dr. Subhada Pattnaik — dr-subhada-pattnaik.png
+  {
+    id: 'doc-8',
+    full_name: 'Dr. Subhada Pattnaik',
+    slug: 'dr-subhada-pattnaik',
+    profile_image_url: '/images/doctors/dr-subhada-pattnaik.png',
+    qualifications: 'MS (Orthopedics)',
+    medical_registration_details: 'OMC Reg. No. 20312 (Odisha Medical Council)',
+    specialty_summary: 'Orthopedics (ଅସ୍ଥିଶଲ୍ୟ ବିଶେଷଜ୍ଞ)',
+    biography: 'Dr. Subhada Pattnaik (MS Orthopedics) is a Consultant Orthopedic Surgeon specialising in bone fractures, joint disorders, spine conditions, sports injuries, and musculoskeletal health. She consults at Satyabhama Health Care every Thursday and Friday. Patients are advised to contact clinic reception for exact session timings.',
+    designation: 'Consultant Orthopedic Surgeon',
+    languages: ['Odia', 'Hindi', 'English'],
+    consultant_type: 'visiting',
+    verification_status: 'verified',
+    publication_status: 'published',
+    contact_number: '+91 70086 10481',
+    experience_years: 10,
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 ];
 
@@ -333,20 +291,22 @@ export const INITIAL_SCHEDULES: DoctorSchedule[] = [
     start_time: '09:00',
     end_time: '13:00',
     session_type: 'morning',
+    notes: 'Daily patient consultation — please call clinic to confirm timing',
     publication_status: 'published',
     created_at: '2026-01-10T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
   {
     id: 'sch-2',
     doctor_id: 'doc-1',
-    day_of_week: 1, // Mon
-    start_time: '17:00',
-    end_time: '20:00',
-    session_type: 'evening',
+    day_of_week: 2, // Tue
+    start_time: '09:00',
+    end_time: '13:00',
+    session_type: 'morning',
+    notes: 'Daily patient consultation — please call clinic to confirm timing',
     publication_status: 'published',
     created_at: '2026-01-10T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
   {
     id: 'sch-3',
@@ -355,159 +315,160 @@ export const INITIAL_SCHEDULES: DoctorSchedule[] = [
     start_time: '09:00',
     end_time: '13:00',
     session_type: 'morning',
+    notes: 'Daily patient consultation — please call clinic to confirm timing',
     publication_status: 'published',
     created_at: '2026-01-10T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
   {
     id: 'sch-4',
+    doctor_id: 'doc-1',
+    day_of_week: 4, // Thu
+    start_time: '09:00',
+    end_time: '13:00',
+    session_type: 'morning',
+    notes: 'Daily patient consultation — please call clinic to confirm timing',
+    publication_status: 'published',
+    created_at: '2026-01-10T10:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+  {
+    id: 'sch-5',
     doctor_id: 'doc-1',
     day_of_week: 5, // Fri
     start_time: '09:00',
     end_time: '13:00',
     session_type: 'morning',
+    notes: 'Daily patient consultation — please call clinic to confirm timing',
     publication_status: 'published',
     created_at: '2026-01-10T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+  {
+    id: 'sch-6',
+    doctor_id: 'doc-1',
+    day_of_week: 6, // Sat
+    start_time: '09:00',
+    end_time: '13:00',
+    session_type: 'morning',
+    notes: 'Daily patient consultation — please call clinic to confirm timing',
+    publication_status: 'published',
+    created_at: '2026-01-10T10:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 
   // 2. Dr. Sanjay Pany (doc-2): 1st Saturday of Every Month | 9:00 AM – 10:30 AM
   {
-    id: 'sch-5',
+    id: 'sch-7',
     doctor_id: 'doc-2',
     day_of_week: 6, // Sat
+    monthly_weeks: [1], // 1st Saturday only
     start_time: '09:00',
     end_time: '10:30',
     session_type: 'morning',
+    notes: '1st Saturday monthly clinic (9:00 AM – 10:30 AM). Token distribution begins at 8:30 AM.',
     publication_status: 'published',
     created_at: '2026-01-12T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 
-  // 3. Dr. Dillip Kumar Chand (doc-3): Every Sunday | 10:00 AM – 1:00 PM
-  {
-    id: 'sch-6',
-    doctor_id: 'doc-3',
-    day_of_week: 0, // Sun
-    start_time: '10:00',
-    end_time: '13:00',
-    session_type: 'morning',
-    publication_status: 'published',
-    created_at: '2026-01-15T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 4. Dr. Swarupananda Mishra (doc-4): Saturday Consultation
-  {
-    id: 'sch-7',
-    doctor_id: 'doc-4',
-    day_of_week: 6, // Sat
-    start_time: '10:00',
-    end_time: '13:00',
-    session_type: 'morning',
-    publication_status: 'published',
-    created_at: '2026-02-01T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 5. Dr. Manjulata Dash (doc-5): Tuesday Consultation
+  // 3. Dr. Dillip Kumar Chand (doc-3): Every Sunday | 8:00 AM – 9:30 AM
   {
     id: 'sch-8',
-    doctor_id: 'doc-5',
-    day_of_week: 2, // Tue
-    start_time: '14:00',
-    end_time: '16:30',
-    session_type: 'evening',
+    doctor_id: 'doc-3',
+    day_of_week: 0, // Sun
+    start_time: '08:00',
+    end_time: '09:30',
+    session_type: 'morning',
+    notes: 'Weekly Sunday orthopedic trauma clinic (8:00 AM – 9:30 AM)',
     publication_status: 'published',
-    created_at: '2026-02-05T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    created_at: '2026-01-15T10:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 
-  // 6. Dr. Rama Chandra Deo (doc-6): Sunday Neurosurgery Clinic
+  // 4. Dr. Sabyasachi Pati (doc-4): 2nd & 4th Saturday | 9:00 AM – 10:00 AM
   {
     id: 'sch-9',
-    doctor_id: 'doc-6',
-    day_of_week: 0, // Sun
-    start_time: '10:00',
-    end_time: '12:30',
+    doctor_id: 'doc-4',
+    day_of_week: 6, // Sat
+    monthly_weeks: [2, 4], // 2nd & 4th Saturday
+    start_time: '09:00',
+    end_time: '10:00',
     session_type: 'morning',
+    notes: '2nd & 4th Saturday monthly ENT & Head-Neck clinic (9:00 AM – 10:00 AM)',
     publication_status: 'published',
-    created_at: '2026-02-10T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 
-  // 7. Dr. Umesh Chandra Jena (doc-7): Pediatric OPD
+  // 5. Dr. Srikanta Acharya (doc-5): 1st & 2nd Tuesday | 2:00 PM – 4:00 PM
   {
     id: 'sch-10',
-    doctor_id: 'doc-7',
-    day_of_week: 1, // Mon
-    start_time: '09:30',
-    end_time: '12:30',
-    session_type: 'morning',
+    doctor_id: 'doc-5',
+    day_of_week: 2, // Tue
+    monthly_weeks: [1, 2], // 1st & 2nd Tuesday
+    start_time: '14:00',
+    end_time: '16:00',
+    session_type: 'evening',
+    notes: '1st & 2nd Tuesday monthly Skin & VD clinic (2:00 PM – 4:00 PM)',
     publication_status: 'published',
-    created_at: '2026-01-20T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
+
+  // 6. Dr. Subhransu Sekhar Lenka (doc-6): Every Sunday
   {
     id: 'sch-11',
-    doctor_id: 'doc-7',
-    day_of_week: 4, // Thu
-    start_time: '09:30',
-    end_time: '12:30',
-    session_type: 'morning',
-    publication_status: 'published',
-    created_at: '2026-01-20T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 8. Dr. Shakti Prasad Choudhury (doc-8): Gastroenterology Clinic
-  {
-    id: 'sch-12',
-    doctor_id: 'doc-8',
-    day_of_week: 0, // Sun
-    start_time: '11:00',
-    end_time: '14:00',
-    session_type: 'morning',
-    publication_status: 'published',
-    created_at: '2026-02-15T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 9. Dr. Soudamini Dhal (doc-9): O&G Clinic
-  {
-    id: 'sch-13',
-    doctor_id: 'doc-9',
-    day_of_week: 2, // Tue
-    start_time: '10:00',
-    end_time: '13:00',
-    session_type: 'morning',
-    publication_status: 'published',
-    created_at: '2026-01-25T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-  {
-    id: 'sch-14',
-    doctor_id: 'doc-9',
-    day_of_week: 4, // Thu
-    start_time: '10:00',
-    end_time: '13:00',
-    session_type: 'morning',
-    publication_status: 'published',
-    created_at: '2026-01-25T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
-  },
-
-  // 10. Dr. Subharansu Sekhar Lenka (doc-10): Surgery OPD
-  {
-    id: 'sch-15',
-    doctor_id: 'doc-10',
+    doctor_id: 'doc-6',
     day_of_week: 0, // Sun
     start_time: '09:00',
     end_time: '12:00',
     session_type: 'morning',
+    notes: 'Every Sunday surgery clinic — please call clinic to confirm timing',
     publication_status: 'published',
     created_at: '2026-01-20T10:00:00Z',
-    updated_at: '2026-10-31T01:30:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+
+  // 7. Dr. Tanmaya Padhy (doc-7): 4th Tuesday | 10:00 AM – 12:00 PM
+  {
+    id: 'sch-12',
+    doctor_id: 'doc-7',
+    day_of_week: 2, // Tue
+    monthly_weeks: [4], // 4th Tuesday only
+    start_time: '10:00',
+    end_time: '12:00',
+    session_type: 'morning',
+    notes: '4th Tuesday monthly neurology clinic (10:00 AM – 12:00 PM)',
+    publication_status: 'published',
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+
+  // 8. Dr. Subhada Pattnaik (doc-8): Every Thursday & Friday
+  {
+    id: 'sch-13',
+    doctor_id: 'doc-8',
+    day_of_week: 4, // Thu
+    start_time: '10:00',
+    end_time: '13:00',
+    session_type: 'morning',
+    notes: 'Every Thursday orthopedic clinic — please call clinic to confirm timing',
+    publication_status: 'published',
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
+  },
+  {
+    id: 'sch-14',
+    doctor_id: 'doc-8',
+    day_of_week: 5, // Fri
+    start_time: '10:00',
+    end_time: '13:00',
+    session_type: 'morning',
+    notes: 'Every Friday orthopedic clinic — please call clinic to confirm timing',
+    publication_status: 'published',
+    created_at: '2026-10-31T06:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 ];
 
@@ -515,27 +476,15 @@ export const INITIAL_SCHEDULES: DoctorSchedule[] = [
 export const INITIAL_EXCEPTIONS: ScheduleException[] = [
   {
     id: 'exc-1',
-    doctor_id: 'doc-6', // Dr. Rama Chandra Deo
-    consultation_date: '2026-11-08',
-    exception_type: 'special_clinic',
-    start_time: '10:00',
-    end_time: '13:00',
-    notes: 'Pre-registered Neuro & Spine advisory clinic. Please confirm token by calling clinic reception.',
-    publication_status: 'published',
-    created_at: '2026-10-25T10:00:00Z',
-    updated_at: '2026-10-25T10:00:00Z',
-  },
-  {
-    id: 'exc-2',
     doctor_id: 'doc-3', // Dr. Dillip Kumar Chand
     consultation_date: '2026-11-01',
     exception_type: 'special_clinic',
-    start_time: '10:00',
-    end_time: '13:30',
+    start_time: '08:00',
+    end_time: '09:30',
     notes: 'Regular Sunday bone trauma & joint arthritis OPD.',
     publication_status: 'published',
     created_at: '2026-10-20T10:00:00Z',
-    updated_at: '2026-10-20T10:00:00Z',
+    updated_at: '2026-10-31T06:00:00Z',
   },
 ];
 
@@ -651,7 +600,7 @@ Consulting an ENT specialist ensures a thorough diagnostic evaluation using mode
 At Satyabhama Health Care in Bhadrak, experienced ENT surgeons conduct scheduled outpatient clinics to diagnose and provide clinical management strategies for patients across Bhadrak, Bonth, Dhamnagar, and neighbouring blocks.`,
     author: 'Department of ENT & Head Neck Surgery',
     category: 'ENT Care',
-    related_doctor_slug: 'dr-swarupananda-mishra',
+    related_doctor_slug: 'dr-sabyasachi-pati',
     related_specialty_slug: 'ent',
     read_time_minutes: 5,
     publication_status: 'published',
@@ -689,7 +638,7 @@ Consulting a qualified dermatologist (Skin & V.D. specialist) allows accurate di
 Dermatological evaluations at Satyabhama Health Care provide patients with evidence-based management plans and guidance on skin hygiene to prevent recurring infections.`,
     author: 'Department of Dermatology & Venereology',
     category: 'Dermatology',
-    related_doctor_slug: 'dr-manjulata-dash',
+    related_doctor_slug: 'dr-srikanta-acharya',
     related_specialty_slug: 'dermatology',
     read_time_minutes: 5,
     publication_status: 'published',
@@ -708,7 +657,6 @@ In recent years, Non-Alcoholic Fatty Liver Disease (NAFLD/NASH) has emerged as a
 Specialist gastroenterologists conduct scheduled outpatient clinics at Satyabhama Health Care to evaluate complex gastrointestinal, pancreatic, and liver conditions.`,
     author: 'Department of Gastroenterology & Hepatology',
     category: 'Gastroenterology',
-    related_doctor_slug: 'dr-shakti-prasad-choudhury',
     related_specialty_slug: 'gastroenterology',
     read_time_minutes: 6,
     publication_status: 'published',
@@ -727,7 +675,6 @@ During seasonal monsoon and winter changes in coastal Odisha, children are parti
 Routine pediatric visits at Satyabhama Health Care emphasize preventive care, immunization schedules, childhood asthma management, and parental counseling on balanced complementary feeding.`,
     author: 'Department of Paediatrics & Child Health',
     category: 'Paediatrics',
-    related_doctor_slug: 'dr-umesh-chandra-jena',
     related_specialty_slug: 'paediatrics',
     read_time_minutes: 5,
     publication_status: 'published',
@@ -736,17 +683,17 @@ Routine pediatric visits at Satyabhama Health Care emphasize preventive care, im
   },
   {
     id: 'art-6',
-    title: 'Understanding the Role of a Neurosurgeon: Brain, Spine & Nerve Consultations',
+    title: 'Understanding the Role of a Neurologist: Brain, Spine & Nerve Consultations',
     slug: 'understanding-the-role-of-a-neurosurgeon',
-    summary: 'Demystifying neurosurgical outpatient clinics: evaluating severe back pain radiating to legs, cervical disc disease, and cranial conditions in Bhadrak.',
-    content: `A neurosurgeon is a specialist physician dedicated to the diagnostic evaluation and surgical management of disorders affecting the brain, spinal cord, and peripheral nerves. Contrary to common perception, consulting a neurosurgeon does not automatically mean surgery; a major part of neurosurgical practice involves accurate clinical diagnosis, neuro-radiological review (MRI and CT imaging), and determining whether conservative management or surgical intervention offers the best outcome.
+    summary: 'Demystifying neurological outpatient clinics: evaluating headaches, epilepsy, stroke recovery, neuropathy, and movement disorders in Bhadrak.',
+    content: `A neurologist is a specialist physician dedicated to the diagnostic evaluation and medical management of disorders affecting the brain, spinal cord, and peripheral nerves. 
 
-Common conditions reviewed in neurosurgical outpatient clinics include lumbar disc herniation causing severe sciatica, cervical spondylotic myelopathy causing hand numbness or gait instability, persistent severe headaches accompanied by neurological deficits, cranial nerve compressions, and post-traumatic spinal injuries.
+Common conditions reviewed in neurology outpatient clinics include epilepsy, stroke follow-up, Parkinson's disease, tremors, neuropathies, chronic migraine, and cognitive disorders.
 
-Visiting neurosurgical specialists conduct designated super-specialty clinics at Satyabhama Health Care in Bhadrak, enabling patients to receive academic medical opinions close to home without traveling long distances to capital cities.`,
-    author: 'Department of Neurosurgery & Spine',
-    category: 'Neurosurgery',
-    related_doctor_slug: 'dr-rama-chandra-deo',
+Consultant neurologists conduct designated super-specialty clinics at Satyabhama Health Care in Bhadrak, enabling patients to receive academic medical opinions close to home without traveling long distances to capital cities.`,
+    author: 'Department of Neurology',
+    category: 'Neurology',
+    related_doctor_slug: 'dr-tanmaya-padhy',
     related_specialty_slug: 'neurosurgery',
     read_time_minutes: 6,
     publication_status: 'published',
@@ -822,7 +769,6 @@ In non-pregnant women, menstrual irregularities, severe pelvic cramps (dysmenorr
 At Satyabhama Health Care, female patients receive respectful, confidential medical consultations for antenatal follow-ups, pelvic health assessments, and gynecological reviews in a comfortable outpatient setting.`,
     author: 'Department of Obstetrics & Gynaecology',
     category: 'Gynaecology',
-    related_doctor_slug: 'dr-soudamini-dhal',
     related_specialty_slug: 'gynaecology',
     read_time_minutes: 6,
     publication_status: 'published',
@@ -835,7 +781,7 @@ export const INITIAL_ANNOUNCEMENTS: Announcement[] = [
   {
     id: 'ann-1',
     title: 'Visiting Specialist Clinic Notice',
-    message: 'Visiting super-specialist consultations in Neurosurgery and Gastroenterology are conducted on designated dates. Please call +91 70086 10481 for current week schedule verification.',
+    message: 'Visiting specialist consultations in Neurology, Psychiatry, ENT, Dermatology, and Orthopedics are conducted on designated dates. Please call +91 70086 10481 for current week schedule verification.',
     start_date: '2026-10-01',
     end_date: '2026-11-30',
     is_active: true,

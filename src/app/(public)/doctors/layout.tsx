@@ -4,21 +4,19 @@ import { SITE_URL, CLINIC_CONFIG } from '@/lib/clinic-config';
 export const metadata: Metadata = {
   title: 'Our Doctors & Medical Specialists in Bhadrak | Satyabhama Health Care',
   description:
-    'Verified medical doctors and specialist consultants at Satyabhama Health Care, Stadium Road, Bhadrak. ENT, Dermatology, Orthopedics, Neurosurgery, Psychiatry, Pediatrics, Gastroenterology, General Medicine & Surgery.',
+    'Verified medical doctors and specialist consultants at Satyabhama Health Care, Stadium Road, Bhadrak. General Medicine, Nephrology, Diabetology, Psychiatry, Neurology, Orthopedics, General Surgery, Dermatology & ENT.',
   keywords: [
     'Doctors in Bhadrak',
     'Satyabhama Health Care Doctors',
     'Specialist Doctors Bhadrak',
     'Dr. Priya Ranjan Barik',
-    'Dr. Swarupananda Mishra',
-    'Dr. Manjulata Dash',
-    'Dr. Dillip Kumar Chand',
-    'Dr. Rama Chandra Deo',
     'Dr. Sanjay Pany',
-    'Dr. Umesh Chandra Jena',
-    'Dr. Shakti Prasad Choudhury',
-    'Dr. Soudamini Dhal',
-    'Dr. Subharansu Sekhar Lenka',
+    'Dr. Tanmaya Padhy',
+    'Dr. Subhada Pattnaik',
+    'Dr. Subhransu Sekhar Lenka',
+    'Dr. Dillip Kumar Chand',
+    'Dr. Srikanta Acharya',
+    'Dr. Sabyasachi Pati',
     'Doctor Consultation Timings Bhadrak',
   ],
   alternates: {

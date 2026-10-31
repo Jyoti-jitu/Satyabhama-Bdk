@@ -68,16 +68,16 @@ class DataStore {
       const storedDoctors = localStorage.getItem(STORAGE_KEYS.DOCTORS);
       if (storedDoctors) {
         const parsed = JSON.parse(storedDoctors);
-        // Verify if stored data matches the official 10 doctors in exact serial order
-        const matchesTenOrder =
+        // Verify if stored data matches the official 8 doctors in exact serial order
+        const matchesEightOrder =
           Array.isArray(parsed) &&
-          parsed.length === 10 &&
+          parsed.length === 8 &&
           parsed[0]?.slug === 'dr-priya-ranjan-barik' &&
-          parsed[3]?.slug === 'dr-swarupananda-mishra' &&
-          parsed[9]?.slug === 'dr-subharansu-sekhar-lenka';
+          parsed[3]?.slug === 'dr-sabyasachi-pati' &&
+          parsed[7]?.slug === 'dr-subhada-pattnaik';
 
-        if (!matchesTenOrder) {
-          // Fresh sync to ensure the 10 doctors are in exact serial order
+        if (!matchesEightOrder) {
+          // Fresh sync to ensure the 8 doctors are in exact serial order
           this.doctors = [...INITIAL_DOCTORS];
           this.schedules = [...INITIAL_SCHEDULES];
           this.saveItem(STORAGE_KEYS.DOCTORS, this.doctors);
@@ -94,8 +94,24 @@ class DataStore {
       if (storedSpecialties) this.specialties = JSON.parse(storedSpecialties);
 
       const storedSchedules = localStorage.getItem(STORAGE_KEYS.SCHEDULES);
-      if (storedSchedules && this.doctors[1]?.slug === 'dr-sanjay-pany') {
-        this.schedules = JSON.parse(storedSchedules);
+      if (storedSchedules) {
+        try {
+          const parsedSchedules = JSON.parse(storedSchedules);
+          const matchesCurrentRoster =
+            Array.isArray(parsedSchedules) &&
+            parsedSchedules.length === INITIAL_SCHEDULES.length &&
+            parsedSchedules.some((s: DoctorSchedule) => s.monthly_weeks !== undefined);
+
+          if (matchesCurrentRoster) {
+            this.schedules = parsedSchedules;
+          } else {
+            this.schedules = [...INITIAL_SCHEDULES];
+            this.saveItem(STORAGE_KEYS.SCHEDULES, this.schedules);
+          }
+        } catch {
+          this.schedules = [...INITIAL_SCHEDULES];
+          this.saveItem(STORAGE_KEYS.SCHEDULES, this.schedules);
+        }
       } else {
         this.schedules = [...INITIAL_SCHEDULES];
         this.saveItem(STORAGE_KEYS.SCHEDULES, this.schedules);

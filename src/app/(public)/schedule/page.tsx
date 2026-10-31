@@ -112,7 +112,7 @@ export default function SchedulePage() {
               ସତ୍ୟଭାମା ହେଲ୍‌ଥ କେୟାର - ସ୍ୱୀକୃତ ଡାକ୍ତର ସୂଚୀ ଫଳକ
             </p>
             <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
-              Below is the official consultation directory board physically mounted at the OPD entrance of Satyabhama Health Care in Bhadrak. The 10 doctor profiles and timetables on this website are synchronized directly with this registered clinic board.
+              Below is the official consultation directory board physically mounted at the OPD entrance of Satyabhama Health Care in Bhadrak. The doctor profiles and timetables on this website are synchronized directly with this registered clinic board.
             </p>
             <div className="pt-1 flex flex-wrap items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold text-slate-700">
               <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100">
@@ -181,7 +181,7 @@ export default function SchedulePage() {
             <span>Regular Schedules vs. Special Clinics</span>
           </h3>
           <p className="text-xs text-slate-600 leading-relaxed">
-            Resident doctors consult on recurring weekly days (Monday through Saturday). Visiting super-specialists in disciplines like Neurosurgery and Gastroenterology consult on specific Sundays or announced dates. These are tagged as <strong>Special Clinic</strong>.
+            Resident and regular doctors consult on recurring weekly days. Visiting specialists in disciplines such as Psychiatry, Neurology, Dermatology, and ENT consult on designated monthly dates (e.g. 1st Saturday, 4th Tuesday, 1st & 2nd Tuesday, 2nd & 4th Saturday). These sessions are marked as <strong>Special Clinic</strong>.
           </p>
         </div>
 

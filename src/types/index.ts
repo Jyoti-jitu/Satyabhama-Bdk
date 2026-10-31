@@ -62,6 +62,8 @@ export interface DoctorSchedule {
   session_type?: SessionType;
   effective_from?: string; // YYYY-MM-DD
   effective_until?: string; // YYYY-MM-DD
+  monthly_weeks?: number[]; // [1]=1st week, [2, 4]=2nd & 4th, etc.
+  notes?: string;
   publication_status: PublicationStatus;
   updated_by?: string;
   created_at: string;
