@@ -79,7 +79,16 @@ export default function AboutPage() {
               <div className="flex items-start gap-2.5 sm:gap-3">
                 <CheckCircle2 className="w-4 h-4 sm:w-5 sm:h-5 text-teal-600 flex-shrink-0 mt-0.5" />
                 <span className="text-xs sm:text-sm text-slate-700 font-medium">
-                  Central, easily accessible location at Stadium Road, near Bonth Chhak.
+                  Central, easily accessible location at{' '}
+                  <a
+                    href={CLINIC_CONFIG.map_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-teal-700 hover:text-teal-800 underline font-semibold"
+                    title="View on Google Maps"
+                  >
+                    Stadium Road, near Bonth Chhak ↗
+                  </a>.
                 </span>
               </div>
             </div>

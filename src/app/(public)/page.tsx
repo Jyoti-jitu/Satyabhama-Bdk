@@ -191,19 +191,25 @@ export default function HomePage() {
 
                 {/* Key Information Rows */}
                 <div className="space-y-2.5 sm:space-y-3.5 text-xs sm:text-sm">
-                  <div className="flex items-start gap-2.5 sm:gap-3 p-2 sm:p-2.5 rounded-xl hover:bg-slate-50/80 transition-colors">
-                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-rose-50 border border-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5 text-rose-600">
+                  <a
+                    href={settings.map_url || CLINIC_CONFIG.map_url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-start gap-2.5 sm:gap-3 p-2 sm:p-2.5 rounded-xl hover:bg-slate-50 transition-colors group cursor-pointer"
+                    title="Open in Google Maps"
+                  >
+                    <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-rose-50 border border-rose-100 flex items-center justify-center flex-shrink-0 mt-0.5 text-rose-600 group-hover:bg-rose-100 transition-colors">
                       <MapPin className="w-3.5 h-3.5 sm:w-4 sm:h-4" />
                     </div>
                     <div>
-                      <span className="font-bold text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 block">
-                        Clinic Location
+                      <span className="font-bold text-[10px] sm:text-[11px] uppercase tracking-wider text-slate-400 block group-hover:text-teal-700 transition-colors">
+                        Clinic Location ↗
                       </span>
-                      <p className="text-[11px] sm:text-xs text-slate-700 font-medium mt-0.5 leading-snug">
+                      <p className="text-[11px] sm:text-xs text-slate-700 font-medium mt-0.5 leading-snug group-hover:text-slate-900 transition-colors">
                         {settings.address}
                       </p>
                     </div>
-                  </div>
+                  </a>
 
                   <div className="flex items-start gap-2.5 sm:gap-3 p-2 sm:p-2.5 rounded-xl hover:bg-slate-50/80 transition-colors">
                     <div className="w-7 h-7 sm:w-8 sm:h-8 rounded-lg bg-teal-50 border border-teal-100 flex items-center justify-center flex-shrink-0 mt-0.5 text-teal-600">
@@ -277,10 +283,16 @@ export default function HomePage() {
                 Official clinic display at Nehru Stadium Road, near Bonth Chhak, Bhadrak listing verified consulting specialists and direct reception phone numbers.
               </p>
             </div>
-            <div className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold text-slate-700 bg-slate-50 px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-xl border border-slate-200 self-start sm:self-auto flex-shrink-0">
+            <a
+              href={settings.map_url || CLINIC_CONFIG.map_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-1.5 sm:gap-2 text-[11px] sm:text-xs font-semibold text-slate-700 bg-slate-50 hover:bg-slate-100 hover:text-teal-700 transition-colors px-2.5 sm:px-3.5 py-1.5 sm:py-2 rounded-xl border border-slate-200 self-start sm:self-auto flex-shrink-0"
+              title="View on Google Maps"
+            >
               <MapPin className="w-3.5 h-3.5 text-rose-600 flex-shrink-0" />
-              <span>Bhadrak, Odisha</span>
-            </div>
+              <span>Bhadrak, Odisha ↗</span>
+            </a>
           </div>
 
           {/* Full-width responsive container for Satya Bhamā Healthcare Clinic Signboard (Exact 2:1 native ratio) */}
@@ -369,10 +381,16 @@ export default function HomePage() {
                   <ArrowRight className="w-4 h-4" />
                 </Link>
 
-                <div className="flex items-center gap-1.5 text-[11px] sm:text-xs text-slate-600">
+                <a
+                  href={settings.map_url || CLINIC_CONFIG.map_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-1.5 text-[11px] sm:text-xs text-slate-600 hover:text-teal-700 transition-colors"
+                  title="View on Google Maps"
+                >
                   <MapPin className="w-3.5 h-3.5 text-rose-600" />
-                  <span>Madhuban Gate / Randia, Bhadrak</span>
-                </div>
+                  <span>Madhuban Gate / Randia, Bhadrak ↗</span>
+                </a>
               </div>
             </div>
 
@@ -501,20 +519,26 @@ export default function HomePage() {
               </p>
 
               <div className="space-y-3 sm:space-y-4 pt-1 sm:pt-2">
-                <div className="flex items-start gap-2.5 sm:gap-3.5">
-                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-slate-800/90 flex items-center justify-center flex-shrink-0 text-rose-400 border border-slate-700/80 shadow-xs">
+                <a
+                  href={settings.map_url || CLINIC_CONFIG.map_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2.5 sm:gap-3.5 hover:bg-slate-800/40 p-1.5 -m-1.5 rounded-xl transition-colors group"
+                  title="Open in Google Maps"
+                >
+                  <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-slate-800/90 flex items-center justify-center flex-shrink-0 text-rose-400 group-hover:bg-slate-800 border border-slate-700/80 shadow-xs transition-colors">
                     <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                   </div>
                   <div>
-                    <h3 className="text-xs sm:text-sm font-bold text-white">Full Clinic Address</h3>
+                    <h3 className="text-xs sm:text-sm font-bold text-white group-hover:text-teal-300 transition-colors">Full Clinic Address</h3>
                     <p className="text-[11px] sm:text-xs text-slate-300 mt-0.5 leading-relaxed">
                       {settings.address}
                     </p>
-                    <span className="text-[10px] sm:text-[11px] text-teal-300 font-medium block mt-0.5 sm:mt-1">
-                      Landmark: Near Bonth Chhak &amp; Stadium Entrance Gate
+                    <span className="text-[10px] sm:text-[11px] text-teal-300 font-medium block mt-0.5 sm:mt-1 underline">
+                      Landmark: Near Bonth Chhak &amp; Stadium Entrance Gate • View on Map ↗
                     </span>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-2.5 sm:gap-3.5">
                   <div className="w-8 h-8 sm:w-10 sm:h-10 rounded-lg sm:rounded-xl bg-slate-800/90 flex items-center justify-center flex-shrink-0 text-teal-400 border border-slate-700/80 shadow-xs">

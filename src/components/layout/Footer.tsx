@@ -139,11 +139,19 @@ export function Footer() {
               Clinic Contact
             </h3>
             <ul className="space-y-1 sm:space-y-3.5 text-[10px] sm:text-sm">
-              <li className="flex items-start gap-1.5 sm:gap-3">
-                <MapPin className="w-3 h-3 sm:w-5 sm:h-5 text-rose-400 flex-shrink-0 mt-0.5" />
-                <span className="text-slate-300 leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
-                  {CLINIC_CONFIG.address}
-                </span>
+              <li>
+                <a
+                  href={CLINIC_CONFIG.map_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-1.5 sm:gap-3 text-slate-300 hover:text-teal-400 transition-colors group"
+                  title="View on Google Maps"
+                >
+                  <MapPin className="w-3 h-3 sm:w-5 sm:h-5 text-rose-400 group-hover:text-rose-300 flex-shrink-0 mt-0.5" />
+                  <span className="leading-snug sm:leading-relaxed line-clamp-2 sm:line-clamp-none">
+                    {CLINIC_CONFIG.address}
+                  </span>
+                </a>
               </li>
 
               <li className="flex items-start gap-1.5 sm:gap-3">

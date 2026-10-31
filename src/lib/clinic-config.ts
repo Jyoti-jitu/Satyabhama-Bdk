@@ -13,7 +13,7 @@ export const CLINIC_CONFIG: ClinicSettings = {
   secondary_phone: '+91 76818 62111',
   email: 'info@satyabhamahealthcare.com',
   opening_hours: 'Monday – Sunday: 8:00 AM – 9:00 PM',
-  map_url: 'https://maps.app.goo.gl/pLYvSBrxS45MwBh56',
+  map_url: 'https://maps.app.goo.gl/H6sfq3o3obadJtPB8',
   timezone: 'Asia/Kolkata',
   developer_name: 'JOVIX Technologies',
   developer_url: 'https://www.jovix.co.uk',

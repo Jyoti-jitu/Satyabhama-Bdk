@@ -115,10 +115,16 @@ export default function ServicesPage() {
           <div className="grid grid-cols-1 lg:grid-cols-12 gap-5 sm:gap-8 xl:gap-12 items-center">
             {/* Left Column: Text & Key Highlights */}
             <div className="lg:col-span-7 xl:col-span-7 space-y-3 sm:space-y-5">
-              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-teal-50 border border-teal-200 text-teal-800 text-[10px] sm:text-xs font-bold">
+              <a
+                href={CLINIC_CONFIG.map_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-2.5 py-0.5 sm:px-3 sm:py-1 rounded-full bg-teal-50 hover:bg-teal-100 transition-colors border border-teal-200 text-teal-800 text-[10px] sm:text-xs font-bold"
+                title="View location on Google Maps"
+              >
                 <MapPin className="w-3.5 h-3.5 text-rose-600 flex-shrink-0" />
-                <span>Physical Clinic Landmark &amp; Services • ରାସ୍ତା କଡ଼ ସୂଚନା ଫଳକ</span>
-              </div>
+                <span>Physical Clinic Landmark &amp; Services • ରାସ୍ତା କଡ଼ ସୂଚନା ଫଳକ ↗</span>
+              </a>
 
               <h2 className="text-xl sm:text-3xl font-extrabold text-slate-900 tracking-tight">
                 Specialist Outpatient Care &amp; Directional Landmark in Bhadrak
@@ -153,15 +159,21 @@ export default function ServicesPage() {
                   </div>
                 </div>
 
-                <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3.5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-100">
-                  <MapPin className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-rose-600 flex-shrink-0 mt-0.5" />
+                <a
+                  href={CLINIC_CONFIG.map_url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3.5 rounded-xl sm:rounded-2xl bg-slate-50 hover:bg-teal-50 border border-slate-100 hover:border-teal-200 transition-colors group"
+                  title="View Roadside Landmark on Google Maps"
+                >
+                  <MapPin className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-rose-600 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
                   <div>
-                    <h3 className="text-[11px] sm:text-sm font-bold text-slate-900 leading-tight">Roadside Landmark Sign</h3>
+                    <h3 className="text-[11px] sm:text-sm font-bold text-slate-900 group-hover:text-teal-800 transition-colors leading-tight">Roadside Landmark Sign ↗</h3>
                     <p className="text-[10px] sm:text-xs text-slate-500 mt-0.5 sm:mt-1 leading-snug line-clamp-2 sm:line-clamp-none">
                       Spot our prominent roadside pillar when approaching Stadium Road from Bonth Chhak or Nehru Stadium.
                     </p>
                   </div>
-                </div>
+                </a>
 
                 <div className="flex items-start gap-2 sm:gap-3 p-2 sm:p-3.5 rounded-xl sm:rounded-2xl bg-slate-50 border border-slate-100">
                   <CheckCircle2 className="w-3.5 h-3.5 sm:w-5 sm:h-5 text-emerald-600 flex-shrink-0 mt-0.5" />

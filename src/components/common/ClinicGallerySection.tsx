@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { ZoomIn, X, MapPin } from 'lucide-react';
+import { CLINIC_CONFIG } from '@/lib/clinic-config';
 
 export interface ClinicPhotoItem {
   id: string;
@@ -139,10 +140,16 @@ export function ClinicGallerySection({
                 </p>
               </div>
 
-              <div className="pt-2 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500">
-                <MapPin className="w-3.5 h-3.5 text-teal-600 flex-shrink-0" />
-                <span className="truncate">{photo.location}</span>
-              </div>
+              <a
+                href={CLINIC_CONFIG.map_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="pt-2 border-t border-slate-100 flex items-center gap-1.5 text-xs text-slate-500 hover:text-teal-700 transition-colors group cursor-pointer"
+                title="View location on Google Maps"
+              >
+                <MapPin className="w-3.5 h-3.5 text-teal-600 flex-shrink-0 group-hover:scale-110 transition-transform" />
+                <span className="truncate group-hover:underline">{photo.location} ↗</span>
+              </a>
             </div>
           </div>
         ))}

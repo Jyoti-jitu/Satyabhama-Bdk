@@ -119,10 +119,16 @@ export default function SchedulePage() {
                 <Phone className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-teal-600" />
                 <span>7008610481 / 7681862111</span>
               </span>
-              <span className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100">
+              <a
+                href={CLINIC_CONFIG.map_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-lg bg-slate-100 hover:bg-slate-200 hover:text-teal-700 transition-colors"
+                title="View on Google Maps"
+              >
                 <MapPin className="w-3 h-3 sm:w-3.5 sm:h-3.5 text-rose-600" />
-                <span>Stadium Road, Bhadrak</span>
-              </span>
+                <span>Stadium Road, Bhadrak ↗</span>
+              </a>
             </div>
           </div>
 
@@ -185,15 +191,24 @@ export default function SchedulePage() {
           </p>
         </div>
 
-        <div className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200 shadow-sm space-y-2 sm:space-y-3">
-          <h3 className="font-bold text-slate-900 text-sm sm:text-base flex items-center gap-2">
-            <MapPin className="w-4 h-4 text-rose-500" />
-            <span>Visiting Satyabhama Health Care</span>
+        <a
+          href={CLINIC_CONFIG.map_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-white p-4 sm:p-6 rounded-xl sm:rounded-2xl border border-slate-200 hover:border-teal-300 shadow-sm space-y-2 sm:space-y-3 block transition-colors group"
+          title="Open Google Maps Location"
+        >
+          <h3 className="font-bold text-slate-900 group-hover:text-teal-700 text-sm sm:text-base flex items-center justify-between gap-2 transition-colors">
+            <span className="flex items-center gap-2">
+              <MapPin className="w-4 h-4 text-rose-500" />
+              <span>Visiting Satyabhama Health Care</span>
+            </span>
+            <span className="text-xs text-teal-600 font-semibold group-hover:underline">Open Map ↗</span>
           </h3>
           <p className="text-xs text-slate-600 leading-relaxed">
             Located at Nehru Stadium Road, near Bonth Chhak, Bhadrak. Patient consultation registration tokens are distributed at the reception desk in order of arrival.
           </p>
-        </div>
+        </a>
       </div>
     </div>
   );

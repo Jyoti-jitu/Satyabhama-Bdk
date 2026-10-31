@@ -63,7 +63,18 @@ class DataStore {
   private loadFromStorage() {
     try {
       const storedSettings = localStorage.getItem(STORAGE_KEYS.SETTINGS);
-      if (storedSettings) this.settings = JSON.parse(storedSettings);
+      if (storedSettings) {
+        const parsedSettings = JSON.parse(storedSettings);
+        if (parsedSettings && parsedSettings.map_url === CLINIC_CONFIG.map_url) {
+          this.settings = parsedSettings;
+        } else {
+          this.settings = { ...CLINIC_CONFIG };
+          this.saveItem(STORAGE_KEYS.SETTINGS, this.settings);
+        }
+      } else {
+        this.settings = { ...CLINIC_CONFIG };
+        this.saveItem(STORAGE_KEYS.SETTINGS, this.settings);
+      }
 
       const storedDoctors = localStorage.getItem(STORAGE_KEYS.DOCTORS);
       if (storedDoctors) {

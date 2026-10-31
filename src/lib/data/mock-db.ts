@@ -572,7 +572,7 @@ export const INITIAL_FAQS: FAQItem[] = [
   {
     id: 'faq-4',
     question: 'Where is Satyabhama Health Care located in Bhadrak?',
-    answer: 'We are conveniently located at Satyabhama Health Care Nehru Stadium, Stadium Road, Bonth Chhak, Near, Bhadrak, Odisha 756100. Google Maps Directions: https://maps.app.goo.gl/pLYvSBrxS45MwBh56',
+    answer: 'We are conveniently located at Satyabhama Health Care Nehru Stadium, Stadium Road, Bonth Chhak, Near, Bhadrak, Odisha 756100. Google Maps Directions: https://maps.app.goo.gl/H6sfq3o3obadJtPB8',
     category: 'Location & Access',
     sort_order: 4,
     publication_status: 'published',

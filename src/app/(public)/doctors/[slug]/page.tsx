@@ -377,10 +377,16 @@ export default async function DoctorProfilePage({ params }: DoctorProfilePagePro
                 <span>Verified Specialist</span>
               </span>
 
-              <span className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-slate-50 border border-slate-200 text-slate-700 text-[11px] sm:text-xs font-medium">
+              <a
+                href={CLINIC_CONFIG.map_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-1 sm:gap-1.5 px-2.5 sm:px-3 py-0.5 sm:py-1 rounded-full bg-slate-50 hover:bg-slate-100 hover:text-teal-700 transition-colors border border-slate-200 text-slate-700 text-[11px] sm:text-xs font-medium"
+                title="View clinic location on Google Maps"
+              >
                 <MapPin className="w-3.5 h-3.5 text-rose-600 flex-shrink-0" />
-                <span>Satyabhama Health Care, Bhadrak</span>
-              </span>
+                <span>Satyabhama Health Care, Bhadrak ↗</span>
+              </a>
             </div>
 
             {/* H1 Full Doctor Name (SEO Primary Target) */}
@@ -442,13 +448,19 @@ export default async function DoctorProfilePage({ params }: DoctorProfilePagePro
               </div>
             </div>
 
-            <div className="flex items-start gap-2.5">
-              <MapPin className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />
+            <a
+              href={CLINIC_CONFIG.map_url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-2.5 hover:text-teal-700 transition-colors group cursor-pointer"
+              title="View clinic location on Google Maps"
+            >
+              <MapPin className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5 group-hover:scale-110 transition-transform" />
               <div>
-                <span className="font-semibold text-slate-700 block">OPD Location</span>
-                <span className="text-slate-500">Satyabhama Health Care, Bhadrak</span>
+                <span className="font-semibold text-slate-700 group-hover:text-teal-700 block transition-colors">OPD Location ↗</span>
+                <span className="text-slate-500 group-hover:text-teal-600 transition-colors">Satyabhama Health Care, Bhadrak</span>
               </div>
-            </div>
+            </a>
 
             <div className="flex items-start gap-2.5">
               <UserCheck className="w-4 h-4 text-teal-600 flex-shrink-0 mt-0.5" />

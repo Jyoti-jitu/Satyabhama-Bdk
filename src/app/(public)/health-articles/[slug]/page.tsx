@@ -194,12 +194,18 @@ export default async function ArticleDetailPage({ params }: ArticlePageProps) {
 
         {/* Clinic Location & Telephone Association */}
         <div className="mt-6 p-4 rounded-2xl bg-slate-50 border border-slate-200 text-xs text-slate-600 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-3">
-          <div className="flex items-center gap-2">
+          <a
+            href={CLINIC_CONFIG.map_url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 hover:text-teal-700 transition-colors"
+            title="View clinic on Google Maps"
+          >
             <MapPin className="w-4 h-4 text-rose-600 flex-shrink-0" />
             <span>
-              Satyabhama Health Care, Nehru Stadium Road, near Bonth Chhak, Bhadrak, Odisha 756100
+              Satyabhama Health Care, Nehru Stadium Road, near Bonth Chhak, Bhadrak, Odisha 756100 ↗
             </span>
-          </div>
+          </a>
           <div className="flex items-center gap-2 font-bold text-teal-800">
             <Phone className="w-4 h-4 text-teal-600 flex-shrink-0" />
             <a href={`tel:${CLINIC_CONFIG.phone.replace(/\s+/g, '')}`} className="hover:underline">

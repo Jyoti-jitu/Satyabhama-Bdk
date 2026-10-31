@@ -72,20 +72,26 @@ export default function ContactPage() {
             </h2>
 
             <div className="space-y-3.5 sm:space-y-5 text-xs sm:text-sm">
-              <div className="flex items-start gap-3 sm:gap-3.5">
-                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center flex-shrink-0 border border-rose-100">
+              <a
+                href={CLINIC_CONFIG.map_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-start gap-3 sm:gap-3.5 hover:bg-slate-50/80 p-1.5 -m-1.5 rounded-xl transition-colors group"
+                title="View on Google Maps"
+              >
+                <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-rose-50 text-rose-700 flex items-center justify-center flex-shrink-0 border border-rose-100 group-hover:bg-rose-100 transition-colors">
                   <MapPin className="w-4 h-4 sm:w-5 sm:h-5" />
                 </div>
                 <div>
-                  <h3 className="font-bold text-slate-900">Clinic Address</h3>
+                  <h3 className="font-bold text-slate-900 group-hover:text-teal-700 transition-colors">Clinic Address</h3>
                   <p className="text-xs text-slate-600 mt-0.5 sm:mt-1 leading-relaxed">
                     {CLINIC_CONFIG.address}
                   </p>
-                  <span className="text-[11px] text-teal-700 font-medium block mt-0.5 sm:mt-1">
-                    Landmark: Near Bonth Chhak, adjacent to Nehru Stadium entrance
+                  <span className="text-[11px] text-teal-700 font-medium block mt-0.5 sm:mt-1 underline">
+                    Landmark: Near Bonth Chhak, adjacent to Nehru Stadium entrance • Open in Maps ↗
                   </span>
                 </div>
-              </div>
+              </a>
 
               <div className="flex items-start gap-3 sm:gap-3.5">
                 <div className="w-9 h-9 sm:w-10 sm:h-10 rounded-xl bg-teal-50 text-teal-700 flex items-center justify-center flex-shrink-0 border border-teal-100">
@@ -162,10 +168,16 @@ export default function ContactPage() {
           {/* Physical Clinic Frontage & Landmark Card */}
           <div className="bg-white p-3.5 sm:p-5 rounded-2xl sm:rounded-3xl border border-slate-200/90 shadow-sm space-y-2.5 sm:space-y-3">
             <div className="flex items-center justify-between">
-              <span className="text-[11px] sm:text-xs font-bold text-teal-700 uppercase tracking-wider flex items-center gap-1.5">
+              <a
+                href={CLINIC_CONFIG.map_url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[11px] sm:text-xs font-bold text-teal-700 hover:text-teal-900 uppercase tracking-wider flex items-center gap-1.5 transition-colors"
+                title="View location on Google Maps"
+              >
                 <MapPin className="w-3.5 h-3.5 text-rose-600" />
-                <span>Physical Clinic Frontage</span>
-              </span>
+                <span>Physical Clinic Frontage • View Location ↗</span>
+              </a>
             </div>
 
             <div className="relative w-full aspect-[4/3] rounded-xl sm:rounded-2xl overflow-hidden border border-slate-200/90 shadow-sm sm:shadow-md bg-slate-50">
