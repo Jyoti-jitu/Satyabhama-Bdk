@@ -3,6 +3,7 @@ import { TopInfoBar } from '@/components/layout/TopInfoBar';
 import { Navbar } from '@/components/layout/Navbar';
 import { Footer } from '@/components/layout/Footer';
 import { OdiaWelcomeModal } from '@/components/common/OdiaWelcomeModal';
+import { WhatsAppFloatingButton } from '@/components/common/WhatsAppFloatingButton';
 
 export default function PublicLayout({
   children,
@@ -16,6 +17,7 @@ export default function PublicLayout({
       <main className="flex-1">{children}</main>
       <Footer />
       <OdiaWelcomeModal />
+      <WhatsAppFloatingButton />
     </div>
   );
 }

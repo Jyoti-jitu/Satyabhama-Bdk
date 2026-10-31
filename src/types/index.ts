@@ -128,6 +128,8 @@ export interface ClinicSettings {
   address: string;
   phone: string;
   secondary_phone?: string;
+  whatsapp_number?: string;
+  whatsapp_url?: string;
   email: string;
   opening_hours: string;
   map_url: string;
