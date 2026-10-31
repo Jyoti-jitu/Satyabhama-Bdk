@@ -32,55 +32,36 @@ Per operational requirements, the following features are strictly excluded:
 - **Framework**: Next.js 16 (App Router)
 - **Library**: React 19 & TypeScript 5
 - **Styling**: Tailwind CSS v4 with bespoke glassmorphism & medical design tokens
-- **Database**: Supabase PostgreSQL with complete Row Level Security (RLS)
+- **Data Layer**: Statically typed, zero-latency TypeScript models & verified doctor directories
 - **Icons**: Lucide React
 - **Timezone**: Indian Standard Time (`Asia/Kolkata`)
-- **Hosting**: Vercel & Supabase Cloud
+- **Deployment**: Cloudflare Workers / Cloudflare Compute via `@opennextjs/cloudflare` & Wrangler
 
 ---
 
-## 3. Database Architecture & Migrations
-The database schema is fully defined in [`supabase/migrations/20261023_init_schema.sql`](./supabase/migrations/20261023_init_schema.sql) and [`supabase/seed.sql`](./supabase/seed.sql).
-
-### Tables Created:
-1. `clinic_settings`: Clinic name, address, phone numbers, hours, map link, announcement banners, developer credits.
-2. `user_profiles`: Roles (`super_admin`, `clinic_admin`, `doctor`, `content_editor`), linked to `auth.users`.
-3. `doctors`: Full name, slug, qualifications, medical registration details, specialty summary, biography, designation, languages, consultant type (`regular` vs `visiting`), verification status, publication status.
-4. `specialties`: Name, slug, description, icon, publication status.
-5. `doctor_specialties`: Junction mapping doctors to specialties.
-6. `doctor_schedules`: Recurring weekly schedules (days 0–6, start/end time, morning/evening session).
-7. `schedule_exceptions`: Date-specific exceptions (special clinic, visiting specialist, temporary change, cancelled, holiday).
-8. `doctor_change_requests`: Doctor-submitted profile updates, schedule changes, and leaves for admin review.
-9. `website_pages`: Managed content pages.
-10. `health_articles`: Health awareness articles written by clinic doctors.
-11. `faq_items`: Categorized patient questions and answers.
-12. `announcements`: Urgent notices and visiting specialist announcements.
-13. `audit_logs`: Full administrative audit trail for compliance and governance.
-
-### Row Level Security (RLS) Policies
-- **Public Visitors**: Read-only access to published clinic settings, published specialties, verified & published doctors, and active published schedules.
-- **Doctors**: Can only view their own profile, submit change requests for themselves, and view their own schedule history. Cannot edit other doctors' records.
-- **Clinic & Super Administrators**: Full CRUD permissions across all clinic settings, doctor profiles, schedules, approvals, and audit logs.
+## 3. Architecture & Data Model
+All clinic configurations, doctor profiles, consultation schedules, medical specialties, and guidelines are statically typed in TypeScript:
+- `src/lib/data/doctor-timings.ts`: Complete verified schedules and consultation hours
+- `src/lib/data/mock-db.ts` & `src/lib/data/store.ts`: Doctor data, specialties, and outpatient services
+- `src/lib/clinic-config.ts`: Verified clinic contact info, location, and helpline numbers
+- `src/lib/data/doctor-seo.ts`: Rich doctor SEO and Schema.org structured data
 
 ---
 
 ## 4. Local Development Setup
 
 ### Prerequisites
-- Node.js 18+ (tested on Node v22)
+- Node.js 18+ (tested on Node v20/v24)
 - npm 10+
 
 ### Installation
 ```bash
 # Clone the repository
-git clone <repo-url> satyabhama-healthcare
-cd satyabhama-healthcare
+git clone https://github.com/Jyoti-jitu/Satyabhama-Bdk.git
+cd Satyabhama-Bdk
 
 # Install dependencies
 npm install
-
-# Configure environment variables
-cp .env.example .env.local
 
 # Run the development server
 npm run dev
@@ -88,11 +69,20 @@ npm run dev
 
 Open [http://localhost:3000](http://localhost:3000) in your browser.
 
+### Cloudflare Production Build
+```bash
+# Production Next.js + Cloudflare Worker build
+npm run build
+
+# Deploy to Cloudflare
+npm run deploy
+```
+
 ---
 
 ## 5. Staff & Doctor Portal Credentials (Demo Mode)
 
-The application includes an in-memory/localStorage reactive database that works out-of-the-box even before Supabase credentials are provided.
+The application includes an in-memory/localStorage reactive portal for administrative workflows.
 
 To access the portals, navigate to `/login`:
 - **Clinic Administrator**: Click **"Clinic Administrator Demo Login"** or enter `admin@satyabhama.com` / `admin123`.
